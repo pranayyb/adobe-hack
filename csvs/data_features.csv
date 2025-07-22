@@ -1,0 +1,1513 @@
+size,bold,italic,text_len,num_prefix,is_larger_than_common_font,text_case,is_bulleted,text,label
+11,0,0,95,0,0,mixed,0,"In Low-Level Design (LLD) , the focus is on how the system will be built. It involves designing",H3
+11,0,0,87,0,0,mixed,0,"individual modules/classes, their interactions, and implementing OOP principles, design",H3
+11,0,0,19,0,0,lower,0,"patterns, and more.",H3
+11,0,0,73,0,0,mixed,0,"Here's a comprehensive list of topics to study in LLD, grouped logically:",H3
+13,1,0,36,1,1,mixed,0,1. Object-Oriented Programming (OOP),H1
+11,1,0,17,0,0,mixed,0,Principles of OOP,H2
+11,0,0,13,0,0,sentence,0,Encapsulation,P
+11,0,0,11,0,0,sentence,0,Abstraction,P
+11,0,0,11,0,0,sentence,0,Inheritance,P
+11,0,0,12,0,0,sentence,0,Polymorphism,P
+11,1,0,16,0,0,mixed,0,SOLID Principles,H2
+11,0,0,31,0,0,mixed,0,Single Responsibility Principle,P
+11,0,0,21,0,0,mixed,0,Open/Closed Principle,P
+11,0,0,29,0,0,mixed,0,Liskov Substitution Principle,P
+11,0,0,31,0,0,mixed,0,Interface Segregation Principle,P
+11,0,0,30,0,0,mixed,0,Dependency Inversion Principle,P
+13,1,0,15,1,1,mixed,0,2. Class Design,H1
+11,0,0,37,0,0,sentence,0,"Defining classes, attributes, methods",P
+11,0,0,25,0,0,sentence,0,"Constructors, destructors",P
+11,0,0,45,0,0,sentence,0,"Access modifiers (public, private, protected)",P
+11,0,0,30,0,0,sentence,0,Relationships between classes:,P
+11,0,0,11,0,0,sentence,0,Association,P
+11,0,0,11,0,0,sentence,0,Aggregation,P
+11,0,0,11,0,0,sentence,0,Composition,P
+11,0,0,21,0,0,sentence,0,Inheritance (extends),P
+11,0,0,37,0,0,sentence,0,Implementation (implements interface),P
+13,1,0,35,1,1,mixed,0,3. Design Patterns (very important),H1
+11,1,0,21,0,0,mixed,0,Creational Patterns :,H2
+11,0,0,9,0,0,sentence,0,Singleton,P
+11,0,0,7,0,0,sentence,0,Factory,P
+11,0,0,16,0,0,mixed,0,Abstract Factory,P
+11,0,0,7,0,0,sentence,0,Builder,P
+11,0,0,9,0,0,sentence,0,Prototype,P
+11,1,0,21,0,0,mixed,0,Structural Patterns :,H2
+11,0,0,7,0,0,sentence,0,Adapter,P
+11,0,0,9,0,0,sentence,0,Decorator,P
+11,0,0,5,0,0,sentence,0,Proxy,P
+11,0,0,9,0,0,sentence,0,Composite,P
+11,0,0,6,0,0,sentence,0,Facade,P
+11,1,0,21,0,0,mixed,0,Behavioral Patterns :,H2
+11,0,0,8,0,0,sentence,0,Strategy,P
+11,0,0,8,0,0,sentence,0,Observer,P
+11,0,0,7,0,0,sentence,0,Command,P
+11,0,0,5,0,0,sentence,0,State,P
+11,0,0,23,0,0,mixed,0,Chain of Responsibility,P
+11,0,0,15,0,0,mixed,0,Template Method,P
+13,1,0,31,1,1,mixed,0,4. UML Diagrams (Visual Design),H2
+11,1,0,13,0,0,mixed,0,Class Diagram,P
+11,1,0,16,0,0,mixed,0,Sequence Diagram,P
+11,0,0,16,0,0,mixed,0,Use Case Diagram,P
+11,0,0,16,0,0,mixed,0,Activity Diagram,P
+11,0,0,17,0,0,mixed,0,Component Diagram,P
+13,1,0,49,1,1,mixed,0,5. Designing Real-World Systems (Object Modeling),H2
+11,0,0,48,0,0,mixed,0,Study how to model real-world systems using OOP:,P
+11,0,0,11,0,0,mixed,0,Parking Lot,P
+11,0,0,25,0,0,mixed,0,Library Management System,P
+11,0,0,20,0,0,mixed,0,Movie Booking System,P
+11,0,0,23,0,0,mixed,0,Ride Sharing (Uber/Ola),P
+11,0,0,29,0,0,mixed,0,Food Delivery (Zomato/Swiggy),P
+11,0,0,10,0,0,mixed,0,ATM System,P
+11,0,0,9,0,0,sentence,0,Splitwise,P
+11,0,0,30,0,0,mixed,0,Amazon / Flipkart cart systems,P
+11,0,0,9,0,0,sentence,0,Focus on:,P
+11,0,0,23,0,0,sentence,0,Identifying key classes,P
+11,0,0,25,0,0,sentence,0,Defining responsibilities,P
+11,0,0,45,0,0,sentence,0,Interactions and communication (method calls),P
+11,0,0,21,0,0,sentence,0,Managing dependencies,P
+13,1,0,18,1,1,mixed,0,6. Code Principles,H2
+11,0,0,26,0,0,mixed,0,DRY (Dont Repeat Yourself),P
+11,0,0,29,0,0,mixed,0,"KISS (Keep It Simple, Stupid)",P
+11,0,0,31,0,0,mixed,0,YAGNI (You Arent Gonna Need It),P
+11,0,0,42,0,0,mixed,0,Law of Demeter (Least knowledge principle),P
+11,0,0,28,0,0,mixed,0,Composition over Inheritance,P
+13,1,0,33,1,1,mixed,0,7. Interfaces vs Abstract Classes,H2
+11,0,0,22,0,0,sentence,0,When to use interfaces,P
+11,0,0,28,0,0,sentence,0,When to use abstract classes,P
+11,0,0,35,0,0,sentence,0,Multiple inheritance via interfaces,P
+13,1,0,32,1,1,mixed,0,8. Error Handling and Edge Cases,H2
+11,0,0,16,0,0,sentence,0,Exception design,P
+11,0,0,19,0,0,sentence,0,Null object pattern,P
+11,0,0,26,0,0,sentence,0,Defensive coding practices,P
+13,1,0,14,1,1,mixed,0,9. Testability,H2
+11,0,0,38,0,0,sentence,0,Writing code that is easy to unit test,P
+11,0,0,26,0,0,sentence,0,Using dependency injection,P
+11,0,0,33,0,0,sentence,0,Mocking and stubbing dependencies,P
+13,1,0,50,1,1,mixed,0,10. Scalability in Code Design (Readiness for HLD),H2
+11,0,0,13,0,0,sentence,0,Extensibility,P
+11,0,0,10,0,0,sentence,0,Modularity,P
+11,0,0,14,0,0,sentence,0,Loose coupling,P
+11,0,0,13,0,0,sentence,0,High cohesion,P
+11,0,0,81,0,0,sentence,0,Would you like a study plan or a breakdown of system examples with diagrams next?,P
+12.4,0,0,8,0,0,upper,0,ADDRESS:,H2
+12.4,0,0,7,0,0,upper,0,TOPJUMP,H2
+12.4,0,0,12,0,0,upper,0,3735 PARKWAY,H2
+12.4,0,0,22,0,0,upper,0,"PIGEON FORGE, TN 37863",H2
+9.4,0,0,36,0,0,upper,0,(NEAR DIXIE STAMPEDE ON THE PARKWAY),H3
+12.4,1,0,22,0,0,upper,0,RSVP: ----------------,H2
+7.2,0,0,43,0,0,upper,0,CLOSED TOED SHOES ARE REQUIRED FOR CLIMBING,H3
+7.2,0,0,45,0,0,upper,0,"PARENTS OR GUARDIANS NOT ATTENDING THE PARTY,",H3
+7.2,0,0,43,0,0,upper,0,PLEASE VISIT TOPJUMP.COM TO FILL OUT WAIVER,H3
+7.2,0,0,25,0,0,upper,0,SO YOUR CHILD CAN ATTEND.,H3
+26.4,1,0,22,0,1,mixed,0,HOPE To SEE You THERE!,H1
+23.4,0,0,15,0,1,upper,0,WWW.TOPJUMP.COM,H1
+28,1,0,36,0,1,mixed,0,Parsippany -Troy Hills STEM Pathways,H1
+14,0,0,80,0,1,mixed,0,Mission Statement: To provide PTHSD high school students with the opportunity to,H2
+12,0,0,89,0,1,lower,0,"concentrate their studies, beyond those required in high school, in the areas of science,",P
+12,0,0,84,0,1,lower,0,"technology, engineering, and mathematics, and expose students to relevant real world",P
+12,0,0,92,0,1,lower,0,"experiences through project work, conferences and presentations to enhance their high school",P
+12,0,0,11,0,1,lower,0,experience.,P
+14,0,0,6,0,1,sentence,0,Goals:,H2
+11.5,0,0,63,0,1,sentence,1,"Inspire keen interest in mathematics, science, engineering, and",P
+11.5,0,0,57,0,1,lower,0,"technology, develop strong scholarship in the subject and",P
+11.5,0,0,54,0,1,lower,0,promote the enjoyment of these studies in high school.,P
+11.5,0,0,63,0,1,sentence,1,Expose students to potential career opportunities in the field.,P
+11.5,0,0,58,0,1,sentence,1,Encourage students to pursue higher education and major in,P
+11.5,0,0,13,0,1,mixed,0,STEM careers.,P
+11.5,0,0,59,0,1,mixed,1,Promote interactions with STEM professionals to learn about,P
+11.5,0,0,21,0,1,lower,0,future opportunities.,P
+11.5,0,0,59,0,1,sentence,1,Support field experiences connected to the world outside of,P
+11.5,0,0,20,0,1,lower,0,the school building.,P
+11.5,0,0,57,0,1,sentence,1,"Signal to employers, universities, training programs, and",P
+11.5,0,0,60,0,1,lower,0,military that a student has completed a comprehensive course,P
+11.5,0,0,31,0,1,lower,0,of study in a specialized area.,P
+11.5,0,0,61,0,1,sentence,1,"Cultivate transferable work habits such as perseverance, goal",P
+11.5,0,0,28,0,1,lower,0,"setting, and self-direction.",P
+15.3,0,0,15,0,1,upper,0,PATHWAY OPTIONS,H2
+15.3,1,0,15,0,1,upper,0,REGULAR PATHWAY,H2
+11,0,0,17,0,0,mixed,0,4 credits of Math,P
+11,0,0,20,0,0,mixed,0,4 credits of Science,P
+11,0,0,38,0,0,mixed,0,4 credits of STEM-designated electives,P
+11,0,0,28,0,0,mixed,0,Maintain an overall 2.85 GPA,P
+11,0,0,34,0,0,mixed,0,Participate in a minimum of 3 STEM,P
+11,0,0,35,0,0,lower,0,presentations/conferences each year,P
+11,0,0,35,0,0,lower,0,with a required minimum total of 12,P
+11,0,0,36,0,0,lower,0,presentations/conferences throughout,P
+11,0,0,14,0,0,lower,0,the 4 years. *,P
+11,0,0,34,0,0,sentence,0,Join and actively participate in a,P
+11,0,0,40,0,0,mixed,0,STEM-related extracurricular activity or,P
+11,0,0,32,0,0,lower,0,club every year of attendance. -,P
+15.3,1,0,19,0,1,upper,0,DISTINCTION PATHWAY,H2
+11,0,0,37,0,0,mixed,0,4 credits of Math - At least one math,P
+11,0,0,34,0,0,mixed,0,course should be an AP Math class.,P
+11,0,0,34,0,0,mixed,0,4 credits of Science- At least one,P
+11,0,0,30,0,0,mixed,0,science course should be an AP,P
+11,0,0,14,0,0,sentence,0,Science class.,P
+11,0,0,38,0,0,mixed,0,4 credits of STEM-designated electives,P
+11,0,0,24,0,0,mixed,1,- One must be a Computer,P
+11,0,0,24,0,0,mixed,0,Science/Technology Class,P
+11,0,0,27,0,0,mixed,0,Maintain an overall 3.5 GPA,P
+11,0,0,34,0,0,mixed,0,Participate in a minimum of 3 STEM,P
+11,0,0,39,0,0,lower,0,presentations/conferences a year with a,P
+11,0,0,28,0,0,lower,0,required minimum total of 12,P
+11,0,0,36,0,0,lower,0,presentations/conferences throughout,P
+11,0,0,12,0,0,lower,0,the 4 years.,P
+11,0,0,34,0,0,sentence,0,Join and actively participate in a,P
+11,0,0,40,0,0,mixed,0,STEM-related extracurricular activity or,P
+11,0,0,30,0,0,lower,0,club every year of attendance.,P
+11,0,0,38,0,0,sentence,0,Either participate in an internship or,P
+11,0,0,32,0,0,lower,0,design and implement a community,P
+11,0,0,15,0,0,lower,0,impact project.,P
+11.7,1,0,41,0,1,mixed,0,Application form for grant of LTC advance,H2
+9.7,1,0,2,1,0,mixed,0,1,P
+9.7,1,0,2,1,0,mixed,0,2,P
+9.7,1,0,2,1,0,mixed,0,3,P
+9.7,0,0,30,0,0,mixed,0,Name of the Government Servant,P
+9.7,0,0,11,0,0,sentence,0,Designation,P
+9.7,0,0,39,0,0,mixed,0,Date of entering the Central Government,P
+9.7,0,0,7,0,0,sentence,0,Service,P
+9.7,0,0,14,0,0,upper,0,PAY + SI + NPA,P
+9.7,1,0,2,1,0,mixed,0,4,P
+9.7,1,0,33,1,0,mixed,0,5. Whether permanent or temporary,P
+9.7,1,0,2,1,0,mixed,0,6,P
+9.7,0,0,41,0,0,mixed,0,Home Town as recorded in the Service Book,P
+9.7,0,0,41,0,0,sentence,0,Whether wife / husband is employed and if,P
+9.7,1,0,2,1,0,mixed,0,7,P
+9.7,1,0,2,1,0,mixed,0,8,P
+9.7,1,0,2,1,0,mixed,0,9,P
+9.7,0,0,26,0,0,mixed,0,so whether entitled to LTC,P
+9.7,0,0,43,0,0,sentence,0,Whether the concession is to be availed for,P
+9.7,0,0,44,0,0,lower,0,visiting home town and if so block for which,P
+9.7,0,0,21,0,0,mixed,0,LTC is to be availed.,P
+9.7,0,0,45,0,0,mixed,0,(a) If the concession is to visit anywhere in,P
+9.7,0,0,31,0,0,sentence,0,"India, the place to be visited.",P
+9.7,0,0,34,0,0,mixed,0,(b) Block for which to be availed.,P
+9.7,0,0,6,0,0,sentence,0,Single,P
+9.7,0,0,4,0,0,lower,0,rail,P
+9.7,0,0,8,0,0,lower,0,fare/bus,P
+9.7,0,0,4,0,0,lower,0,fare,P
+9.7,0,0,4,0,0,lower,0,from,P
+9.7,0,0,3,0,0,lower,0,the,P
+9.7,1,0,3,1,0,mixed,0,10,P
+9.7,0,0,43,0,0,lower,0,headquarters to home town/place of visit by,P
+9.7,0,0,15,0,0,lower,0,shortest route.,P
+9.7,0,0,57,0,0,mixed,0,Persons in respect of whom LTC is proposed to be availed.,P
+9.7,1,0,4,0,0,sentence,0,Name,H3
+9.7,1,0,3,0,0,sentence,0,Age,H3
+9.7,1,0,12,0,0,sentence,0,Relationship,H3
+9.7,1,0,4,0,0,mixed,0,S.No,H3
+9.7,1,0,2,1,0,mixed,0,1,H3
+9.7,1,0,2,1,0,mixed,0,2,H3
+9.7,1,0,2,1,0,mixed,0,3,H3
+9.7,1,0,2,1,0,mixed,0,4,H3
+9.7,1,0,2,1,0,mixed,0,5,H3
+9.7,1,0,2,1,0,mixed,0,6,H3
+9.7,0,0,27,0,0,sentence,0,Amount of advance required.,P
+9.7,0,0,3,0,0,sentence,0,Rs.,P
+9.7,1,0,3,1,0,mixed,0,11,P
+9.7,1,0,3,1,0,mixed,0,12,P
+9.7,0,0,96,0,0,sentence,0,I declare that the particulars furnished above are true and correct to the best of my knowledge.,P
+9.7,0,0,1,0,0,upper,0,I,P
+9.7,0,0,99,0,0,lower,0,undertake to produce the tickets for the outward journey within ten days of receipt of the advance.,P
+9.7,0,0,109,0,0,mixed,0,In the event of cancellation of the journey or if I fail to produce the tickets within ten days of receipt of,P
+9.7,0,0,66,0,0,mixed,0,"advance, I undertake to refund the entire advance in one lump sum.",P
+9.7,1,0,4,0,0,sentence,0,Date,H3
+9.7,1,0,32,0,0,mixed,0,Signature of Government Servant.,H3
+16,1,0,18,0,1,mixed,0,Ontarios Libraries,H2
+16,1,0,16,0,1,mixed,0,Working Together,H2
+32,1,0,6,0,1,lower,0,oposal,H1
+32,1,0,33,0,1,mixed,0,quest foooor Prr Prr Prr Proposal,H1
+32,1,0,6,0,1,lower,0,oposal,H1
+32,1,0,7,0,1,lower,0,quest f,H1
+32,1,0,17,0,1,mixed,0,RFP: Reeeequest f,H1
+32,1,0,6,0,1,upper,0,RFP: R,H1
+32,1,0,6,0,1,lower,0,oposal,H1
+32,1,0,7,0,1,lower,0,quest f,H1
+32,1,0,6,0,1,upper,0,RFP: R,H1
+32,1,0,6,0,1,upper,0,RFP: R,H1
+24,0,0,36,0,1,mixed,0,To Present a Proposal for Developing,H2
+24,0,0,33,0,1,mixed,0,the Business Plan for the Ontario,H2
+24,0,0,15,0,1,mixed,0,Digital Library,H2
+20,0,0,14,0,1,sentence,0,"March 21, 2003",H2
+10,0,0,101,0,0,mixed,0,"The Ontario Digital Library will make Ontario a better place to study, work and live by ensuring that",P
+10,0,0,94,0,0,mixed,0,all Ontario citizens have access to the knowledge and learning supports needed to be life-long,P
+10,0,0,64,0,0,mixed,0,learners and effective contributors towards Ontarios prosperity.,P
+20,1,0,24,0,1,mixed,0,Ontarios Digital Library,H2
+16,0,0,58,0,1,mixed,0,A Critical Component for Implementing Ontarios Road Map to,H2
+16,0,0,19,0,1,mixed,0,Prosperity Strategy,P
+12,1,0,7,0,1,sentence,0,Summary,H3
+11,0,0,87,0,0,mixed,0,The purpose of this Request for Proposal (RFP) is to invite firms and/or consultants to,P
+11,0,0,90,0,0,mixed,0,present a proposal for developing the business plan for the Ontario Digital Library (ODL).,P
+11,0,0,97,0,0,mixed,0,The ODL will deliver high-quality library electronic content to all Ontario residents in order to,P
+11,0,0,93,0,0,mixed,0,"assist people as they learn, work, and enhance their quality of life. The business plan to be",P
+11,0,0,49,0,0,lower,0,developed is to document and clearly communicate:,P
+11,0,0,55,0,0,mixed,0,"how the ODL will be implemented, including the timeline",P
+11,0,0,41,0,0,lower,0,the financial plan for the implementation,P
+11,0,0,90,0,0,lower,0,"the financial plan for the first 2 operating years, including capital and operating costs,",P
+11,0,0,14,0,0,lower,0,"revenues, etc.",P
+11,0,0,57,0,0,lower,0,a financial forecast for the succeeding 2 operating years,P
+11,0,0,52,0,0,mixed,0,the services and products to be delivered by the ODL,P
+11,0,0,68,0,0,mixed,0,how the ODL will operate and be managed following the implementation,P
+11,0,0,78,0,0,lower,0,"who will be involved, and what their role/responsibility will be, for both the",P
+11,0,0,37,0,0,lower,0,implementation and operational stages,P
+11,0,0,49,0,0,mixed,0,the marketing and communications plan for the ODL,P
+11,0,0,82,0,0,mixed,0,This business plan must be completed and approved by the ODL Steering Committee no,P
+11,0,0,29,0,0,mixed,0,"later than September 30, 2003",P
+11,0,1,9,0,0,sentence,0,Timeline:,P
+11,0,0,85,0,0,mixed,0,Those firms/consultants intended to submit a proposal to this RFP must indicate their,P
+11,0,0,86,0,0,mixed,0,intention to do so in an e-mail to Michael Ridley (mridley@uoguelph.ca) by April 11th.,P
+11,0,0,69,0,0,mixed,0,"Proposals may be e-mailed, mailed, couriered or faxed to: Larry Moore",P
+11,0,0,88,0,0,mixed,0,"(lmoore@accessola.com), Executive Director, The Ontario Library Association, 100 Lombard",P
+10,0,0,82,0,0,mixed,0,"St., Suite 303, Toronto, ON M5C 1M3. Proposals must be received by Noon on Monday,",P
+11,1,1,15,0,0,sentence,0,"April 21, 2003.",P
+11,0,0,95,0,0,sentence,0,Those proposals that are short-listed will be invited to discuss their proposal during the week,P
+11,0,0,87,0,0,mixed,0,"of April 28, 2003. No presentation will be expected. Firms or consultants invited to an",P
+11,0,0,87,0,0,lower,0,interview will be expected to discuss the project and their approach with the selection,P
+11,0,0,10,0,0,lower,0,committee.,P
+11,0,0,90,0,0,mixed,0,"Contracts with the firm/consultant will be signed the week of May 5, 2003 with the work to",P
+11,0,0,40,0,0,lower,0,commence as soon as possible thereafter.,P
+7.6,1,1,57,0,0,mixed,0,RFP: To Develop the Ontario Digital Library Business Plan,P
+7.6,1,1,10,0,0,sentence,0,March 2003,P
+9,1,1,4,0,0,mixed,0,2222,P
+11,0,0,90,0,0,sentence,0,Please note that we reserve the right not to select any of the submitted proposals and may,P
+11,0,0,50,0,0,mixed,0,seek further response to these Terms of Reference.,P
+11,0,0,93,0,0,mixed,0,"If you require further information or have any questions, please contact Michael Ridley by e-",P
+11,0,0,84,0,0,mixed,0,mail (mridley@uoguelph.ca) only by 3:00 p.m. on Friday April 18th. All questions and,P
+11,0,0,85,0,0,lower,0,responses will be shared with those who have indicated that they will be submitting a,P
+11,0,0,92,0,0,mixed,0,"proposal. Please note, that firms/consultants who have not indicated in an e-mail to Michael",P
+11,0,0,89,0,0,mixed,0,Ridley by April 11th that they will be submitting a proposal will not receive any further,P
+11,0,0,34,0,0,lower,0,information or question responses.,P
+12,1,0,10,0,1,sentence,0,Background,H3
+11,0,0,89,0,0,mixed,0,"First, some background on the ODL. For the last two years the Ontario Library Association",P
+11,0,0,88,0,0,mixed,0,"has acted as a catalyst, bringing together the stakeholders needed to create the Ontario",P
+11,0,0,94,0,0,mixed,0,"Digital Library (ODL). These stakeholders include Ontarios 5000+ public libraries, university,",P
+11,0,0,72,0,0,mixed,0,"college, and school libraries, as well as Ontario government ministries.",P
+11,0,0,96,0,0,sentence,0,Libraries that serve very different clientele recognize that by working together they can create,P
+11,0,0,89,0,0,mixed,0,"seamless access to quality electronic library services. Through the ODL, students will be",P
+11,0,0,92,0,0,lower,0,"able to explore a topic at school, use the same child-safe resources after school (either at",P
+11,0,0,88,0,0,lower,0,"home or at a public library), enter college or university with a knowledge of how to use",P
+11,0,0,95,0,0,lower,0,"electronic resources that are still available and then, after graduation, continue to use these",P
+11,0,0,40,0,0,lower,0,skills and resources at work or at home.,P
+11,0,0,89,0,0,mixed,0,We are moving into a period of convergence. With convergence we no longer have to license,P
+11,0,0,94,0,0,mixed,0,commercial products as individual libraries or institutions. We can work together to spend our,P
+11,0,0,89,0,0,mixed,0,money wisely. The provincial government has made this possible by working hard to provide,P
+11,0,0,93,0,0,mixed,0,"all Ontarians with a stable, high-speed communications infrastructure. While there is still a",P
+11,0,0,93,0,0,lower,0,"great deal of work needed to improve this infrastructure, libraries are beginning to plan how",P
+11,0,0,90,0,0,mixed,0,best to exploit communications technology. We can reduce barriers to access and create the,P
+11,0,0,61,0,0,lower,0,content infrastructure needed to support a knowledge society.,P
+11,0,0,88,0,0,mixed,0,"The concept of an ODL is a key element in The Roadmap to Prosperity, a strategic plan to",P
+11,0,0,86,0,0,mixed,0,envision and attain Ontarios economic goal prepared by the Ontario Jobs and Investment,P
+11,0,0,90,0,0,mixed,0,Board. The OJIB strategic plan recommends an electronic library to connect students to new,P
+11,0,0,90,0,0,mixed,0,"workplaces, new sources of information and applied learning opportunities. The ODL will do",P
+11,0,0,90,0,0,mixed,0,"that and much more. The ODL will connect students to electronic information, and will also",P
+11,0,0,96,0,0,lower,0,leverage this investment to help connect all citizens to the electronic information they need as,P
+11,0,0,70,0,0,lower,0,"they make decisions, solve problems and enhance their quality of life.",P
+11,0,0,90,0,0,mixed,0,Libraries have long been a key delivery point for public services. The ODL will allow that,P
+11,0,0,94,0,0,lower,0,"delivery point to move closer to citizens, into the smallest of libraries and even into living",P
+11,0,0,6,0,0,lower,0,rooms.,P
+11,0,0,96,0,0,sentence,0,"Libraries have a long tradition of using a practical, consultative approach to solving problems,",P
+11,0,0,86,0,0,mixed,0,and of learning from others. The ODL is a very practical solution to various problems.,P
+11,0,0,91,0,0,mixed,0,Jurisdiction-wide digital libraries are very practical and very real. The ODL we propose is,P
+11,0,0,90,0,0,mixed,0,leading edge for Ontario but several jurisdictions have forged the path with collaborative,P
+11,0,0,94,0,0,mixed,0,"digital libraries. We can learn from their experiences. For example, The Alberta Library (TAL)",P
+7.6,1,1,57,0,0,mixed,0,RFP: To Develop the Ontario Digital Library Business Plan,P
+7.6,1,1,10,0,0,sentence,0,March 2003,P
+9,1,1,4,0,0,mixed,0,3333,P
+11,0,0,89,0,0,mixed,0,was incorporated in 1997 as a province-wide library consortium. TAL works collaboratively,P
+11,0,0,88,0,0,lower,0,with its members to promote universal access to materials and resources in more than 250,P
+11,0,0,88,0,0,mixed,0,"public, post-secondary, special, government and regional libraries. Unlike ODL, TAL does",P
+11,0,0,85,0,0,mixed,0,"not include elementary or secondary schools. However, the timeline and funding we are",P
+11,0,0,87,0,0,mixed,0,proposing for ODL is comparable to TALs experience. TALs business planning took several,P
+11,0,0,89,0,0,mixed,0,years. TALs implementation plan was supported by 8 million dollars in provincially shared,P
+11,0,0,95,0,0,mixed,0,"funding, spread over three years, later revised to 15 million dollars over 4 years. Not only is",P
+11,0,0,81,0,0,mixed,0,"Albertas population 30% of Ontarios, TAL does not include elementary or secondary",P
+11,0,0,88,0,0,mixed,0,schools as partners; it has 250 member libraries. ODL envisions universal access for all,P
+11,0,0,89,0,0,mixed,0,"10,000,000 Ontarians, with more than 5000 Ontario libraries as partners. Although ODL can",P
+11,0,0,89,0,0,mixed,0,"learn from TALs practices, the scope of planning and implementing ODL is much larger than",P
+11,0,0,4,0,0,upper,0,TAL.,P
+11,0,0,90,0,0,mixed,0,The ODL will be a partnership-based organization providing seamless electronic information,P
+11,0,0,101,0,0,mixed,0,services and resources to the citizens of Ontario. It will use local libraries as the entry point for,P
+11,0,0,87,0,0,mixed,0,common resources The ODL will recognize the unique responsibilities and needs of public,P
+11,0,0,92,0,0,mixed,0,"libraries, school libraries, college and university libraries and special libraries. The ODL",P
+11,0,0,90,0,0,lower,0,"envisions a digital network of information resources, allowing members to collaborate when",P
+11,0,0,78,0,0,lower,0,there is mutual benefit and to support the common mandates of local libraries.,P
+11,0,0,55,0,0,mixed,0,The principles which will define and guide the ODL are:,P
+11,1,1,35,0,0,mixed,0,Equitable access for all Ontarians:,H3
+11,0,0,86,0,0,sentence,0,"We will bring consistent, high-quality electronic resources and services to 10 million",P
+11,0,0,16,0,0,sentence,0,Ontario citizens,P
+11,0,0,82,0,0,sentence,0,We will eliminate barriers to the access to information and create more consistent,P
+11,0,0,29,0,0,lower,0,services for library clients.,P
+11,1,1,42,0,0,sentence,0,Shared decision-making and accountability:,H3
+11,0,0,81,0,0,mixed,0,We will facilitate consensus among members regarding ODLs portfolio of electronic,P
+11,0,0,21,0,0,lower,0,licenses and services,P
+11,0,0,87,0,0,sentence,0,We will balance the interests and realities of small and large as well as rich and poor,P
+11,0,0,29,0,0,lower,0,communities and institutions.,P
+11,1,1,28,0,0,sentence,0,Shared governance structure:,H3
+11,0,0,69,0,0,sentence,0,We will share decision-making in order to enable the people we serve.,P
+11,0,0,68,0,0,sentence,0,We will work based on an underlying assumption of trust and synergy.,P
+11,1,1,15,0,0,sentence,0,Shared funding:,H3
+11,0,0,91,0,0,sentence,0,"We will leverage provincial, institutional, and local dollars to realize economies of scale",P
+11,0,0,45,0,0,mixed,0,and put Ontario dollars to work for everyone.,P
+11,0,0,91,0,0,sentence,0,We will be willing to pool talents and dollars in order to provide common services that are,P
+11,0,0,75,0,0,lower,0,truly greater than those that can be maintained by individual institutions.,P
+7.6,1,1,57,0,0,mixed,0,RFP: To Develop the Ontario Digital Library Business Plan,P
+7.6,1,1,10,0,0,sentence,0,March 2003,P
+9,1,1,4,0,0,mixed,0,4444,P
+11,1,1,22,0,0,sentence,0,Local points of entry:,H3
+11,0,0,84,0,0,sentence,0,"We will provide the licenses, infrastructure, services and support that enable local",P
+11,0,0,88,0,0,mixed,0,"libraries to provide exceptional services to their clientele. ODL will focus on support,",P
+11,0,0,46,0,0,lower,0,"providing the underpinning, not overshadowing.",P
+11,0,0,41,0,0,mixed,0,Services envisioned for the ODLs include:,P
+11,1,1,7,0,0,sentence,0,Access:,H3
+11,0,0,64,0,0,mixed,0,"to the deep web (i.e. Commercial, purchased electronic services)",P
+11,0,0,46,0,0,lower,0,to credible web sites and electronic resources,P
+11,0,0,33,0,0,lower,0,to digital government information,P
+11,0,0,28,0,0,lower,0,to local digital collections,P
+11,1,1,20,0,0,mixed,0,Guidance and Advice:,H3
+11,0,0,21,0,0,lower,0,to support e-learning,P
+11,0,0,74,0,0,lower,0,"to support citizens, in real-time, as they try to use electronic resources",P
+11,0,0,40,0,0,lower,0,to assist citizens as they use web-links,P
+11,1,1,9,0,0,sentence,0,Training:,H3
+11,0,0,19,0,0,lower,0,for library workers,P
+11,0,0,22,0,0,lower,0,for the general public,P
+11,1,1,34,0,0,mixed,0,Provincial Purchasing & Licensing:,H3
+11,0,0,67,0,0,lower,0,of electronic content on a consortia basis for all member libraries,P
+11,1,1,22,0,0,mixed,0,Technological Support:,H3
+11,0,0,76,0,0,lower,0,of common standards for the preservation and archiving local digital content,P
+11,0,0,81,0,0,mixed,0,of a common interface to ODL resources and services that can be imbedded in local,P
+11,0,0,17,0,0,lower,0,library web sites,P
+11,1,0,31,0,0,mixed,0,What could the ODL really mean?,H2
+11,1,0,39,0,0,mixed,0,For each Ontario citizen it could mean:,H3
+11,0,0,75,0,0,sentence,0,One local point of entry to access seamless electronic library services and,P
+11,0,0,65,0,0,lower,0,"resources for their personal, educational and professional needs;",P
+11,0,0,81,0,0,sentence,0,"Access to credible, high-quality, user-friendly electronic services through their",P
+11,0,0,39,0,0,lower,0,"community, school, or academic library;",P
+11,0,0,75,0,0,sentence,0,Confidence that the electronic services and sources they and their children,P
+11,0,0,66,0,0,lower,0,"are using are safe, valid, and bringing them both global and local",P
+11,0,0,13,0,0,lower,0,perspectives;,P
+11,0,0,73,0,0,sentence,0,Electronic information and tools that enhance job skills and the learning,P
+11,0,0,10,0,0,lower,0,experience,P
+11,1,0,39,0,0,mixed,0,For each Ontario student it could mean:,H3
+11,0,0,77,0,0,sentence,0,"One local point of entry to quality, curriculum- based electronic information",P
+11,0,0,22,0,0,lower,0,resources and services,P
+11,0,0,70,0,0,sentence,0,"Connection to their individual educational environment, whether at the",P
+11,0,0,46,0,0,lower,0,"elementary, secondary or post-secondary levels",P
+7.6,1,1,57,0,0,mixed,0,RFP: To Develop the Ontario Digital Library Business Plan,P
+7.6,1,1,10,0,0,sentence,0,March 2003,P
+9,1,1,4,0,0,mixed,0,5555,P
+11,0,0,73,0,0,sentence,0,"Confidence that the services and resources people are using are credible,",P
+11,0,0,72,0,0,lower,0,available when they need them and adaptable to different learning styles,P
+11,1,0,39,0,0,mixed,0,For each Ontario library it could mean:,H3
+11,0,0,75,0,0,sentence,0,One point of entry for themselves and their clientele to quality electronic,P
+11,0,0,75,0,0,lower,0,"resources and services that support and enhance their collections, programs",P
+11,0,0,12,0,0,lower,0,and services,P
+11,0,0,78,0,0,sentence,0,"The opportunity to show case their local community, collections, services, and",P
+11,0,0,9,0,0,lower,0,expertise,P
+11,0,0,79,0,0,sentence,0,"The opportunity to gain from the provincial, collaborative partnership in order",P
+11,0,0,63,0,0,lower,0,to provide a seamless gateway to digital resources and services,P
+11,1,0,41,0,0,mixed,0,For the Ontario government it could mean:,H3
+11,0,1,80,0,0,mixed,0,"A point of entry to information services and resources for all Ontario citizens,",P
+11,0,0,33,0,0,lower,0,connecting to portal initiatives.,P
+11,0,0,74,0,0,mixed,0,Support of the Ontario E-Learning strategy through a collaborative digital,P
+11,0,0,72,0,0,mixed,0,library initiative that positions Ontario on the global e-learning scene,P
+11,0,0,71,0,0,sentence,0,Improved access and flexibility for all students at all ages and stages,P
+11,0,0,46,0,0,mixed,0,(supports Ontarios lifelong learning strategy),P
+11,0,0,78,0,0,sentence,0,The opportunity to address emerging job skills shortages and facilitate school,P
+11,0,0,69,0,0,lower,0,to work and job to job transitions with the necessary information and,P
+11,0,0,28,0,0,lower,0,knowledge supports and tools,P
+11,0,0,92,0,0,mixed,0,ODL will be an incorporated non-profit organization governed by a Board of Directors elected,P
+11,0,0,88,0,0,mixed,0,by a voting membership. The Board will include representatives from all stakeholders. We,P
+11,0,0,85,0,0,mixed,0,envision a governance model similar to that prepared for the provinces ORION network.,P
+11,0,0,89,0,0,sentence,0,"More information regarding the envisioned phasing, funding and resources required for the",P
+11,0,0,35,0,0,mixed,0,ODL can be found in the appendixes.,P
+12,1,0,33,0,1,mixed,0,The Business Plan to be Developed,H2
+11,0,0,88,0,0,mixed,0,The business plan which needs to be developed for the ODL must be a formal business plan,P
+11,0,0,81,0,0,mixed,0,"that documents and clearly communicates the ODLs services, funding and governance",P
+11,0,0,90,0,0,lower,0,"structures, as well as implementation plans for 2004-2005, and operational plans for 2005-",P
+11,0,0,87,1,0,mixed,0,"2007. The planning process must also secure the full commitment of all stakeholders, as",P
+11,0,0,38,0,0,mixed,0,represented on the Steering Committee.,P
+11,0,0,45,0,0,sentence,0,"Specifically, the business plan must include:",P
+11,0,0,55,0,0,mixed,0,"how the ODL will be implemented, including the timeline",P
+11,0,0,41,0,0,lower,0,the financial plan for the implementation,P
+11,0,0,90,0,0,lower,0,"the financial plan for the first 2 operating years, including capital and operating costs,",P
+11,0,0,14,0,0,lower,0,"revenues, etc.",P
+11,0,0,57,0,0,lower,0,a financial forecast for the succeeding 2 operating years,P
+11,0,0,52,0,0,mixed,0,the services and products to be delivered by the ODL,P
+11,0,0,68,0,0,mixed,0,how the ODL will operate and be managed following the implementation,P
+11,0,0,78,0,0,lower,0,"who will be involved, and what their role/responsibility will be, for both the",P
+11,0,0,37,0,0,lower,0,implementation and operational stages,P
+7.6,1,1,57,0,0,mixed,0,RFP: To Develop the Ontario Digital Library Business Plan,P
+7.6,1,1,10,0,0,sentence,0,March 2003,P
+9,1,1,4,0,0,mixed,0,6666,P
+11,0,0,49,0,0,mixed,0,the marketing and communications plan for the ODL,P
+11,0,0,60,0,0,lower,0,the commitment of all stakeholders to their responsibilities,P
+11,0,0,90,0,0,sentence,0,The process of developing this business plan must be extremely consultative to ensure that,P
+11,0,0,90,0,0,mixed,0,all stakeholders are engaged in creating a synergistic ODL organization. The proposal must,P
+11,0,1,58,0,0,lower,0,indicate how this consultative process will be approached.,P
+11,0,0,86,0,0,mixed,0,"The business plan for the ODL must address significant issues. There are, for example,",P
+11,0,0,90,0,0,lower,0,enormous differences in the financial resources available to libraries mandated to provide,P
+11,0,0,93,0,0,mixed,0,"similar services. Some post-secondary and public libraries, particularly those in large urban",P
+11,0,0,95,0,0,lower,0,"areas, have the facilities, funding and technological infrastructure necessary to service their",P
+11,0,0,94,0,0,mixed,0,"patrons with electronic services and resources. Many others, particularly in rural regions, do",P
+11,0,0,68,0,0,mixed,0,not. The proposal must indicate how these issues will be approached.,P
+12,1,0,10,0,1,sentence,0,Milestones,H2
+11,0,1,56,0,0,mixed,0,1) A preliminary report will be issued during June 2003.,P
+11,0,1,90,0,0,mixed,0,"2) It is expected that an Interim Report, suitable for distribution to the broader library",P
+11,0,1,83,0,0,mixed,0,"community will be available by August 1, 2003 and that there will be an opportunity",P
+11,0,1,30,0,0,lower,0,for responses to be evaluated.,P
+11,0,1,81,0,0,mixed,0,3) The business plan must be completed and approved by the ODL Steering Committee,P
+11,0,1,33,0,0,mixed,0,"no later than September 30, 2003.",P
+12,1,0,43,0,1,mixed,0,Approach and Specific Proposal Requirements,H2
+11,0,0,91,0,0,sentence,0,The firm/consultant (or proposed team of consultants) will be expected to work closely with,P
+11,0,0,85,0,0,mixed,0,the ODL Steering Committee. Terms of reference for the Committee are in the appendix.,P
+11,0,0,94,0,0,sentence,0,"Given the consultative nature of this business planning process, the firm/consultant will also",P
+11,0,0,89,0,0,lower,0,be expected to travel and communicate regularly with various stakeholders as well as with,P
+11,0,0,39,0,0,lower,0,electronic resource publishers/vendors.,P
+11,0,0,54,0,0,sentence,0,The proposal should include the following information:,P
+11,0,0,30,1,0,lower,0,a) name of the firm/consultant,P
+11,0,0,81,1,0,lower,0,"b) names of those individuals who will be engaged in this project, their specific",P
+11,0,0,71,0,0,lower,0,responsibilities on this project and relevant experience/qualifications,P
+11,0,0,85,1,0,lower,0,c) description of similar engagements that highlight the firms experience in business,P
+11,0,0,44,0,0,lower,0,planning and building stakeholder commitment,P
+11,0,0,65,1,0,lower,0,d) references with details of work completed for these references,P
+11,0,0,82,1,0,lower,0,"e) description of the approach that will be used for completing the business plan,",P
+11,0,0,20,0,0,lower,0,including a timeline,P
+11,0,0,91,1,0,lower,0,"f) cost to complete the study including estimated expenses (i.e.: travel, etc.) and payment",P
+11,0,0,9,0,0,lower,0,structure,P
+7.6,1,1,57,0,0,mixed,0,RFP: To Develop the Ontario Digital Library Business Plan,P
+7.6,1,1,10,0,0,sentence,0,March 2003,P
+9,1,1,4,0,0,mixed,0,7777,P
+12,1,0,35,0,1,mixed,0,Evaluation and Awarding of Contract,H2
+11,0,0,100,0,0,sentence,0,The contract will be awarded to the bidder whose submission offers the best value; the contract will,P
+11,0,0,98,0,0,mixed,0,not necessarily be awarded to the lowest bidder. We reserve the right not to award the contract to,P
+11,0,0,75,0,0,mixed,0,any of the bidders responding to this RFP and we may seek further response.,P
+11,0,0,88,0,0,sentence,0,"Specifically, proposals will be evaluated proposals according to the following criteria:",P
+11,0,0,88,0,0,sentence,0,Quality of the proposal /approach outlined for undertaking the business planning process,P
+11,0,0,23,0,0,sentence,0,Demonstrated experience,P
+11,0,0,24,0,0,sentence,0,"Cost, including expenses",P
+11,0,0,38,0,0,sentence,0,Timeline and projected completion date,P
+11,0,0,66,0,0,mixed,0,Other relevant factors as determined by the ODL Steering Committee,P
+11,0,0,80,0,0,mixed,0,Questions regarding this RFP should be directed by e-mail only to Michael Ridley,P
+11,0,0,22,0,0,lower,0,(mridley@uoguelph.ca).,P
+11,0,0,94,0,0,mixed,0,Bidders are asked not to contact any other member of the ODL Catalyst Team or the ODL Steering,P
+11,0,0,10,0,0,sentence,0,Committee.,P
+7.6,1,1,57,0,0,mixed,0,RFP: To Develop the Ontario Digital Library Business Plan,P
+7.6,1,1,10,0,0,sentence,0,March 2003,P
+9,1,1,4,0,0,mixed,0,8888,P
+12,1,0,43,0,1,mixed,0,Appendix A: ODL Envisioned Phases & Funding,H2
+10,1,0,26,0,0,mixed,0,Phase I: Business Planning,H3
+10,1,0,35,0,0,mixed,0,Timeline: March 2003 September 2003,H3
+10,1,0,96,0,0,mixed,0,"Funding Requested: ~$100,000 jointly funded by stakeholder groups and the provincial government.",H3
+10,1,0,29,0,0,mixed,0,Result: The ODL business plan,H3
+10,0,0,104,0,0,mixed,0,"The first phase will be to build the ODL business plan. This plan will clearly define the ODLs services,",P
+10,0,0,101,0,0,mixed,0,"funding and governance structures, as well as implementation plans for 2003-2005. It will also secure",P
+10,0,0,99,0,0,mixed,0,the full commitment of all stakeholders and scope the operational plan for ODL for 2006 and beyond.,P
+10,0,0,102,0,0,sentence,0,"Given the number and diversity of stakeholders involved, the business planning process must be a fully",P
+10,0,0,102,0,0,mixed,0,consultative approach. To ensure that the planning results in a workable plan with the full commitment,P
+10,0,0,92,0,0,lower,0,"of all stakeholders it must have competent, dedicated staffing and monies for the travel and",P
+10,0,0,63,0,0,lower,0,communication components so critical in a consultative process.,P
+10,1,0,40,0,0,mixed,0,Phase II: Implementing and Transitioning,H3
+10,1,0,34,0,0,mixed,0,Timeline: April 2004 December 2006,H3
+10,1,0,93,0,0,mixed,0,Funding Requested: Funding from other states and provinces suggest that the ODL could receive,H3
+10,0,1,102,0,0,mixed,0,"funding of up to $50 Million (over 3 years). Funding to be provided partnership of government, library",P
+10,0,1,42,0,0,lower,0,stakeholders and other interested parties.,P
+10,1,0,44,0,0,mixed,0,Result: The ODL is implemented and validated,H3
+10,0,0,95,0,0,mixed,0,The second phase will be to implement the ODL based on the business plan. This phase recognizes,P
+10,0,0,100,0,0,mixed,0,that for ODL to be optimally successful libraries must transition to a new way of doing business and,P
+10,0,0,103,0,0,mixed,0,providing services. The transition must occur while libraries continue to provide existing services and,P
+10,0,0,100,0,0,mixed,0,"respond to current challenges. This implementation phase will funded by a partnership of government,",P
+10,0,0,90,0,0,mixed,0,library stakeholders and other interested parties as a means to quickly jumpstart the ODL.,P
+10,0,0,105,0,0,sentence,0,The seed money requested will allow libraries to realign their budgets and services as the infrastructure,P
+10,0,0,100,0,0,mixed,0,"and content of the ODL is created and secured. Some of the funding will be new money, although there",P
+10,0,1,97,0,0,lower,0,is every indication that existing budgets and methods of operating may be modified as a result of,P
+10,0,1,100,0,0,mixed,0,"recommendations. During this phase the polices, procedures, governance structures and accountability",P
+10,0,0,101,0,0,mixed,0,"mechanisms of the ODL will be put in place. Pilot projects will be initiated, evaluated and expanded.",P
+10,0,0,104,0,0,sentence,0,"Information resources will be identified, contracts for these resources will be negotiated and resources",P
+10,0,0,98,0,0,mixed,0,will be made deployed through the ODL. Regular evaluation during this phase will ensure the ODL is,P
+10,0,0,67,0,0,lower,0,achieving its objectives and is accountable to its key communities.,P
+10,1,0,40,0,0,mixed,0,Phase III: Operating and Growing the ODL,H3
+10,1,0,24,0,0,mixed,0,Timeline: January 2007 -,H3
+10,1,0,69,0,0,mixed,0,Funding: $50 Million annually ($35 Million requested from government),H3
+10,1,0,52,0,0,mixed,0,Result: The ODL is fully operational and sustainable,H3
+10,0,0,104,0,0,mixed,0,In the third phase the ODL moves into the operational stage. Ontarians will experience the full benefits,P
+10,0,0,100,0,0,mixed,0,of the initiative and libraries will consolidate support around the ODL to grow resources and extend,P
+7.6,1,1,57,0,0,mixed,0,RFP: To Develop the Ontario Digital Library Business Plan,P
+7.6,1,1,10,0,0,sentence,0,March 2003,P
+9,1,1,4,0,0,mixed,0,9999,P
+10,0,0,106,0,0,mixed,0,capabilities. The challenge is to secure resources sufficient to both sustain the original investments and,P
+10,0,0,19,0,0,mixed,0,to enhance the ODL.,P
+10,0,0,102,0,0,mixed,0,The ongoing funding of the ODL will be based on a partnership model involving all the key participants,P
+10,0,0,107,0,0,mixed,0,"(i.e. government, libraries, donors, public and private sectors). All participants (i.e. beneficiaries) are",P
+10,0,0,104,0,0,mixed,0,expected to make financial contributions to the ODL. It is important in achieving the full impact of the,P
+10,0,0,95,0,0,mixed,0,"ODL on Ontarios economy, society and learning support that all library sectors are participants",P
+10,0,0,53,0,0,lower,0,"(university, colleges, public libraries and schools).",P
+10,0,0,99,0,0,sentence,0,"The proposed funding model requires a continuing government investment, but also recognizes that as",P
+10,0,0,92,0,0,mixed,0,the ODL matures a growing share of ODL funding will come from libraries and non-governmental,P
+10,0,0,99,0,0,mixed,0,sources. During the 3-year implementation phase (2004 2006) libraries will realign their budgets to,P
+10,0,0,95,0,0,mixed,0,enable ongoing funding contributions to ODL. During the same period ODL must build the proposed,P
+10,0,0,102,0,0,mixed,0,endowment and secure public and private sector gifts and/or in-kind contributions. The following chart,P
+10,0,0,61,0,0,mixed,0,outlines the model. This model is based on these assumptions:,P
+10,0,0,2,1,0,mixed,0,1,P
+10,0,0,64,0,0,mixed,0,that ODL expenditures will increase by 50% over a 10 year period,P
+10,0,0,2,1,0,mixed,0,2,P
+10,0,0,80,0,0,lower,0,that government funding will decrease from 70% to 45% during that 10 year period,P
+10,0,0,2,1,0,mixed,0,3,P
+10,0,0,93,0,0,lower,0,"that library contributions, endowment and gifts/in-kind funding will increase from 30% to 55%",P
+10,0,0,22,0,0,lower,0,during the same period,P
+10,1,0,29,0,0,upper,0,OVERVIEW OF ODL FUNDING MODEL,H3
+12,1,0,14,0,1,mixed,0,Funding Source,P
+10,0,0,10,0,0,sentence,0,Government,P
+10,0,0,9,0,0,sentence,0,Libraries,P
+10,0,0,9,0,0,sentence,0,Endowment,P
+10,0,0,13,0,0,mixed,0,Gifts/In-Kind,P
+10,1,0,12,0,0,upper,0,TOTAL ANNUAL,P
+12,1,0,4,0,1,mixed,0,2007,P
+10,0,0,10,0,0,upper,0,$35M (70%),P
+10,0,0,10,0,0,upper,0,$10M (20%),P
+10,0,0,10,0,0,upper,0,$4.5M (9%),P
+10,0,0,10,0,0,upper,0,$0.5M (1%),P
+10,0,0,4,0,0,upper,0,$50M,P
+12,1,0,4,0,1,mixed,0,2017,P
+10,0,0,13,0,0,upper,0,$33.75M (45%),P
+10,0,0,12,0,0,upper,0,$22.5M (30%),P
+10,0,0,10,0,0,upper,0,$15M (20%),P
+10,0,0,11,0,0,upper,0,$3.75M (5%),P
+10,0,0,4,0,0,upper,0,$75M,P
+10,0,0,103,0,0,mixed,0,"While the private sector will be invited to participate in the ODL through the endowment, gifts and in-",P
+10,0,0,101,0,0,mixed,0,"kind contributions, the ODL will also explore compatible commercial services which leverage the reach",P
+10,0,0,46,0,0,mixed,0,of the ODL and help to offset operating costs.,P
+10,0,0,97,0,0,mixed,0,A $50M budget leverages the consortium buying power of the provinces libraries to secure the best,P
+10,0,0,105,0,0,mixed,0,"prices for information resources, the widest accessibility and the most favourable contracts. A budget of",P
+10,0,0,107,0,0,lower,0,this nature will ensure a core digital collection of sufficient scope and coverage to address a substantial,P
+10,0,0,101,0,0,mixed,0,amount of the wide and diverse information and learning needs of the citizens of Ontario (an overview,P
+10,0,0,95,0,0,mixed,0,of the nature of the ODL digital collection is appended). The proposed ODL expenditures in 2006,P
+10,1,1,45,0,0,lower,0,represent an investment of $5.00 per citizen.,P
+10,0,0,108,0,0,mixed,0,It is important to recognize that every new dollar per citizen invested in the Ontario Digital Library has a,P
+10,0,0,96,0,0,lower,0,double benefit: it supports a province-wide library of high quality information resources and it,P
+10,0,0,105,0,0,mixed,0,strengthens every local library in Ontario by allowing them to reinvest existing dollars in new resources,P
+10,0,0,99,0,0,mixed,0,that enhance local services. This multiplier means that for every dollar invested in ODL the return,P
+10,1,1,47,0,0,mixed,0,on investment is worth $2 of value for Ontario.,P
+7.6,1,1,57,0,0,mixed,0,RFP: To Develop the Ontario Digital Library Business Plan,P
+7.6,1,1,10,0,0,sentence,0,March 2003,P
+9,1,1,8,0,0,mixed,0,10101010,P
+12,1,0,11,0,1,mixed,0,Appendix B:,H2
+12,1,0,41,0,1,mixed,0,ODL Steering Committee Terms of Reference,H2
+10,1,0,11,1,0,mixed,0,1. Preamble,H3
+10,0,0,101,0,0,mixed,0,Implementation of the Ontario Digital Library (ODL) requires a detailed business plan to be developed,P
+10,0,0,87,0,0,mixed,0,and supported by its diverse stakeholder communities (see: www.odl.on.ca). The business,P
+10,0,0,93,0,0,mixed,0,"development planning and commitment process will be overseen by a Steering Committee, who are",P
+10,0,0,71,0,0,mixed,0,accountable to potential ODL funders including the Province of Ontario.,P
+10,1,0,21,1,0,mixed,0,2. Terms of Reference,H3
+10,0,0,94,0,0,mixed,0,"In broad terms, the ODL Business Plan Steering Committee is responsible for development of the",P
+10,0,0,92,0,0,mixed,0,"business plan, securing sector support, and management of the planners and process. Specific",P
+10,0,0,25,0,0,lower,0,responsibilities include:,P
+10,0,0,101,1,0,mixed,0,"2.1 developing a detailed business plan for the three-year implementation phase of the ODL, including",P
+10,0,0,89,0,0,lower,0,"governance, management, funding model and structure, organizational structure, marketing,",P
+10,0,0,25,0,0,lower,0,"staffing, and evaluation;",P
+10,0,0,100,1,0,lower,0,"2.2 consulting with and reporting to stakeholder communities, to ensure open, consistent and two-way",P
+10,0,0,90,0,0,lower,0,"communication, and to ensure meaningful opportunities for stakeholder input into decision-",P
+10,0,0,7,0,0,lower,0,making;,P
+10,0,0,52,1,0,lower,0,2.3 recruiting and managing the business planner(s);,P
+10,0,0,96,1,0,lower,0,"2.4 defining terms of reference and resource parameters for business planner(s), and authorizing",P
+10,0,0,13,0,0,lower,0,expenditures;,P
+10,0,0,67,1,0,lower,0,2.5 serving as a focus group for business planner(s) to test ideas;,P
+10,0,0,98,1,0,lower,0,2.6 providing signoff for business planner(s) at key decision points of business plan development;,P
+10,0,0,99,1,0,lower,0,"2.7 securing commitment from library, government, and institutional stakeholders for implementation",P
+10,0,0,21,0,0,lower,0,of the business plan;,P
+10,0,0,43,1,0,lower,0,2.8 presenting the business plan to funders,P
+10,0,0,96,1,0,mixed,0,2.9 undertaking advocacy efforts to promote the ODL to the broader communities including library,P
+10,0,0,26,0,0,lower,0,and education communities.,P
+10,1,0,13,1,0,mixed,0,3. Membership,H3
+10,0,0,101,0,0,mixed,0,"Each of the four sectors, Schools, Colleges, Universities, and Public Libraries can appoint up to two",P
+10,0,0,41,0,0,lower,0,representatives to the steering committee,P
+10,0,0,12,1,0,mixed,0,3.1 Schools:,P
+10,0,0,90,0,0,mixed,1,- Ontario School Library Association (OSLA) and The Association of Library Consultants and,P
+10,0,0,84,0,0,mixed,0,Coordinators of Ontario (TALCO) (Executive Council of OSLA to name representative in,P
+10,0,1,24,0,0,mixed,0,consultation with TALCO),P
+10,0,0,17,1,0,mixed,0,3.2 Universities:,P
+10,0,0,63,0,0,mixed,1,- Ontario Council of University Libraries (OCUL) (OCUL to name),P
+10,0,0,13,1,0,mixed,0,3.3 Colleges:,P
+10,0,0,84,0,0,mixed,1,"- Bibliocentre, and Heads of Libraries and Learning Resources (UAG and HLLR to name)",P
+10,0,0,21,1,0,mixed,0,3.4 Public libraries:,P
+10,0,0,93,0,0,mixed,1,"- Administrators of Medium-sized Public Libraries of Ontario (AMPLO), Administrators of Rural",P
+10,0,0,87,0,0,mixed,0,"Urban Public Libraries of Ontario (ARUPLO), Administrators of Small Public Libraries of",P
+10,0,0,88,0,0,mixed,0,Ontario (ASPLO) and Chief Executives of Large-sized Public Libraries of Ontario (CELPLO),P
+10,0,0,55,0,0,mixed,0,"(Executives of AMPLO, ARUPLO, ASPLO and CELPLO to name)",P
+7.6,1,1,57,0,0,mixed,0,RFP: To Develop the Ontario Digital Library Business Plan,P
+7.6,1,1,10,0,0,sentence,0,March 2003,P
+9,1,1,8,0,0,mixed,0,11111111,P
+10,0,0,95,1,0,mixed,0,3.5 Ontario Library Association representative (ex-officio) (OLA to appoint one representative),P
+10,0,0,91,0,0,mixed,1,- Role of the OLA ex-officio member: To act as a liaison between the steering committee and,P
+10,0,0,94,0,0,mixed,0,"the OLA Board, and to assist the chair with the administrative responsibilities connected with",P
+10,0,0,66,0,0,lower,0,"the preparation of the business plan, finance, and communications.",P
+10,0,0,94,1,0,mixed,0,"3.6 It is anticipated that as planning for the ODL evolves, the Steering Committee may, at its",P
+10,0,0,68,0,0,lower,0,"discretion, call on invited experts to advise on issues as required.",P
+10,1,0,35,1,0,mixed,0,4. Appointment Criteria and Process,H3
+10,0,0,94,1,0,mixed,0,4.1 Groups and organizations named in Section 3 above are responsible for appointing up to two,P
+10,0,0,42,0,0,mixed,0,representatives to the Steering Committee.,P
+10,0,0,3,1,0,mixed,0,4.2,P
+10,0,0,66,0,0,sentence,0,Desired characteristics for steering committee appointees include:,P
+10,0,0,19,0,0,sentence,1,Strategic thinkers;,P
+10,0,0,54,0,0,sentence,1,Committed to the concept of multi-sector partnerships;,P
+10,0,0,52,0,0,sentence,1,Knowledgeable about digital libraries and resources;,P
+10,0,0,42,0,0,sentence,1,Knowledgeable about government structures;,P
+10,0,0,44,0,0,sentence,1,Respected by their communities; influential;,P
+10,0,0,37,0,0,sentence,1,Able to take a consultative approach;,P
+12,0,0,87,0,1,mixed,1,Able to devote time to Steering Committee business: approximately one day per month for,P
+10,0,0,63,0,0,lower,0,meetings plus 2-3 working days per month on related activities.,P
+10,1,0,7,1,0,mixed,0,5. Term,H3
+10,0,0,91,0,0,mixed,0,Expected term on the Steering Committee is the time required to complete development of the,P
+10,0,0,87,0,0,mixed,0,business plan plus two months. This process is expected to take approximately 6 months.,P
+10,1,0,8,1,0,mixed,0,6. Chair,H3
+10,0,0,72,0,0,mixed,0,Chair will be appointed by the Board of the Ontario Library Association.,P
+10,0,0,18,0,0,mixed,0,Role of the Chair:,P
+10,0,0,104,0,0,sentence,0,In addition to the characteristics for appointees (4.2) the role of the chair will be as a process agent,P
+10,0,0,96,0,0,mixed,0,"working with the selected consultant(s), OLA, and the Steering Committee to prepare the business",P
+10,0,0,101,0,0,mixed,0,plan. The chair must be able to devote 5-8 days per month on activities related to the preparation of,P
+10,0,0,79,0,0,lower,0,"the business plan, and communications to stakeholders, funders, and government.",P
+10,1,0,11,1,0,mixed,0,7. Meetings,H3
+10,0,0,99,0,0,sentence,0,It is expected that in person meetings are held once per month and the majority of business will be,P
+10,0,0,40,0,0,lower,0,"conducted by e-mail, and teleconference.",P
+10,1,0,44,1,0,mixed,0,8. Lines of Accountability and Communication,H3
+10,0,0,94,1,0,mixed,0,"8.1 The Steering Committee is accountable to the Province of Ontario, and to its business plan",P
+10,0,0,8,0,0,lower,0,funders.,P
+10,0,0,104,1,0,mixed,0,8.2 The role of the Ontario Library Association is to assume responsibility for funds contributed by the,P
+10,0,0,86,0,0,mixed,0,"ODL funders to finance the business plan, to hold the funds in a separate account, and",P
+10,0,0,82,0,0,mixed,0,disperse them for purposes as directed by the Steering Committee. OLA will provide,P
+10,0,0,82,0,0,mixed,0,financial reports to the Steering Committee as requested and shall comply with all,P
+10,0,0,52,0,0,lower,0,government reporting regulations for funds received.,P
+7.6,1,1,57,0,0,mixed,0,RFP: To Develop the Ontario Digital Library Business Plan,P
+7.6,1,1,10,0,0,sentence,0,March 2003,P
+9,1,1,8,0,0,mixed,0,12121212,P
+10,0,0,94,1,0,mixed,0,8.3 The Steering Committee is accountable to its constituent groups and other stakeholders for,P
+10,0,0,86,0,0,mixed,0,ongoing communications and consultation on issues and progress. The Steering committee,P
+10,0,0,92,0,0,mixed,0,is responsible for strong liaison with government particularly the Chief Information Officer,P
+10,0,0,54,0,0,mixed,0,"Community Services Cluster, ADMs and Deputy Ministers.",P
+10,1,0,40,1,0,mixed,0,9. Financial and Administrative Policies,H3
+10,0,0,57,1,0,mixed,0,9.1 Service on the Steering Committee is non-remunerative,P
+10,0,0,94,1,0,mixed,0,9.2 Travel and meeting expenses for Steering Committee members are reimbursed according to the,P
+10,0,0,43,0,0,mixed,0,policies of the Ontario Library Association,P
+10,0,0,25,1,0,mixed,0,9.3 Conflict of Interest:,P
+10,0,0,94,0,0,mixed,0,The ODL Steering Committee will function according to standard conflict of interest guidelines,P
+10,0,0,90,0,0,lower,0,"ensuring that members, their immediate family members, or their places of employment, will",P
+10,0,0,88,0,0,mixed,0,not benefit financially from the decisions the Steering Committee might make. As a first,P
+10,0,0,97,0,0,mixed,0,"order of business, the Steering Committee will be expected to adopt a conflict of interest policy",P
+10,0,0,62,0,0,lower,0,statement and procedural guidelines that will govern its work.,P
+7.6,1,1,57,0,0,mixed,0,RFP: To Develop the Ontario Digital Library Business Plan,P
+7.6,1,1,10,0,0,sentence,0,March 2003,P
+9,1,1,8,0,0,mixed,0,13131313,P
+12,1,0,11,0,1,mixed,0,Appendix C:,H2
+12,1,0,36,0,1,mixed,0,ODLs Envisioned Electronic Resources,P
+10,0,0,97,0,0,mixed,0,The purpose of the ODL is to provide equal access to information for all Ontario citizens through,P
+10,0,0,86,0,0,mixed,0,collaboration and resource sharing. ODL will be a portal - capable of customization as,P
+10,0,0,90,0,0,lower,0,"a home page for local libraries - to organized, comprehensive, authoritative and validated",P
+10,0,0,98,0,0,mixed,0,e-information resources to meet the needs of all Ontario citizens at all stages and in all aspects,P
+10,0,0,49,0,0,mixed,0,"of their education, life and work. Some examples:",P
+10,0,0,22,1,0,mixed,0,1. Reference Resources,P
+10,0,0,93,0,0,lower,1,"- directories: companies, associations, organizations, governments, educational institutions,",P
+10,0,0,9,0,0,lower,0,etc. etc.,P
+10,0,0,31,0,0,lower,1,"- almanacs, country information",P
+10,0,0,39,0,0,lower,1,"- dictionaries, thesauri, encyclopedias",P
+10,0,0,21,0,0,lower,0,-consumer information,P
+10,0,0,14,0,0,lower,1,"- phone books,",P
+10,0,0,37,0,0,lower,1,"- travel guides, entertainment guides",P
+10,0,0,21,0,0,lower,1,- weather information,P
+10,0,0,18,0,0,lower,1,- media/newspapers,P
+10,0,0,44,0,0,lower,1,"- leisure time, recreational activity guides",P
+10,0,0,35,0,0,lower,1,- indexing and abstracting services,P
+10,0,0,22,0,0,lower,1,"- currency converters,",P
+10,0,0,28,0,0,lower,1,- virtual reference services,P
+10,0,0,30,0,0,lower,0,-vocational/career information,P
+10,0,0,24,0,0,lower,0,-internet search engines,P
+10,0,0,27,0,0,lower,0,-current awareness services,P
+10,0,0,17,1,0,mixed,0,2. Subject Guides,P
+10,0,0,20,0,0,lower,0,-arts and humanities,P
+10,0,0,24,0,0,lower,1,- business and economics,P
+10,0,0,11,0,0,lower,1,- education,P
+10,0,0,22,0,0,lower,0,-recreation and sports,P
+10,0,0,43,0,0,lower,0,"-entertainment - games, activities for kids",P
+10,0,0,19,0,0,lower,0,-health information,P
+10,0,0,23,0,0,lower,0,-science and technology,P
+10,0,0,16,0,0,lower,0,-social sciences,P
+10,0,0,20,0,0,lower,0,-society and culture,P
+10,0,0,24,1,0,mixed,0,3. Educational tool-kits,P
+10,0,0,68,0,0,lower,0,"-guides to information gathering methodologies, information literacy",P
+10,0,0,13,0,0,lower,0,-study guides,P
+10,0,0,24,0,0,lower,0,-study skill development,P
+10,0,0,20,0,0,lower,0,-web-based curricula,P
+10,0,0,23,0,0,lower,0,-internet search guides,P
+10,0,0,36,1,0,mixed,0,"4. Journals, books, maps, music etc.",P
+7.6,1,1,57,0,0,mixed,0,RFP: To Develop the Ontario Digital Library Business Plan,P
+7.6,1,1,10,0,0,sentence,0,March 2003,P
+9,1,1,8,0,0,mixed,0,14141414,P
+24,1,0,8,0,1,sentence,0,Overview,H1
+24,1,0,27,0,1,mixed,0,Foundation Level Extensions,H1
+12,0,0,11,0,1,sentence,0,Version 1.0,P
+18,0,0,51,0,1,mixed,0,International Software Testing Qualifications Board,H1
+10,0,0,16,0,0,mixed,0,Copyright Notice,P
+10,0,0,93,0,0,sentence,0,"This document may be copied in its entirety, or extracts made, if the source is acknowledged.",P
+12,0,0,8,0,1,sentence,0,Overview,P
+10,0,0,39,0,0,mixed,0,Foundation Level Extension Agile Tester,P
+10,0,0,13,0,0,sentence,0,International,P
+10,0,0,16,0,0,mixed,0,Software Testing,P
+10,0,0,20,0,0,mixed,0,Qualifications Board,P
+10,0,0,89,0,0,mixed,0,Copyright International Software Testing Qualifications Board (hereinafter called ISTQB).,P
+10,0,0,12,0,0,sentence,0,Version 2014,P
+10,0,0,12,0,0,sentence,0,Page 2 of 12,P
+10,0,0,12,0,0,sentence,0,"May 31, 2014",P
+6,0,0,51,0,0,mixed,0,International Software Testing Qualifications Board,P
+12,0,0,8,0,1,sentence,0,Overview,P
+10,0,0,39,0,0,mixed,0,Foundation Level Extension Agile Tester,P
+10,0,0,13,0,0,sentence,0,International,P
+10,0,0,16,0,0,mixed,0,Software Testing,P
+10,0,0,20,0,0,mixed,0,Qualifications Board,P
+16,1,0,16,0,1,mixed,0,Revision History,H2
+10,1,0,7,0,0,sentence,0,Remarks,P
+10,0,0,15,0,0,sentence,0,Initial version,P
+10,0,0,25,0,0,mixed,0,WG reviewed and confirmed,P
+10,0,0,30,0,0,lower,0,amended population and diagram,P
+10,0,0,47,0,0,mixed,0,Amended Business Outcomes and Chapters matching,P
+10,0,0,28,0,0,sentence,0,Working group updates on 0.7,P
+10,0,0,30,0,0,mixed,0,GA release for Agile Extension,P
+10,0,0,12,0,0,sentence,0,Version 2014,P
+10,0,0,12,0,0,sentence,0,Page 3 of 12,P
+10,0,0,12,0,0,sentence,0,"May 31, 2014",P
+6,0,0,51,0,0,mixed,0,International Software Testing Qualifications Board,P
+12,0,0,8,0,1,sentence,0,Overview,P
+10,0,0,39,0,0,mixed,0,Foundation Level Extension Agile Tester,P
+10,0,0,13,0,0,sentence,0,International,P
+10,0,0,16,0,0,mixed,0,Software Testing,P
+10,0,0,20,0,0,mixed,0,Qualifications Board,P
+16,1,0,17,0,1,mixed,0,Table of Contents,H2
+10,1,0,16,0,0,mixed,0,Revision History,H3
+10,1,0,1,0,0,mixed,0,3,P
+10,1,0,17,0,0,mixed,0,Table of Contents,H3
+10,1,0,136,0,0,mixed,0,........................................................................................................................................,P
+10,1,0,1,0,0,mixed,0,4,P
+10,1,0,2,1,0,mixed,0,1,P
+10,1,0,2,1,0,mixed,0,2,P
+10,1,0,47,0,0,mixed,0,Introduction to the Foundation Level Extensions,H3
+10,1,0,76,0,0,mixed,0,............................................................................,P
+10,1,0,1,0,0,mixed,0,6,P
+10,1,0,55,0,0,mixed,0,Introduction to Foundation Level Agile Tester Extension,H3
+10,1,0,63,0,0,mixed,0,...............................................................,P
+10,1,0,1,0,0,mixed,0,7,P
+10,0,0,3,1,0,mixed,0,2.1,P
+10,0,0,17,0,0,mixed,0,Intended Audience,P
+10,0,0,28,1,0,mixed,0,2.2 Career Paths for Testers,P
+10,0,0,19,0,0,mixed,0,Learning Objectives,P
+10,0,0,3,1,0,mixed,0,2.3,P
+10,0,0,18,0,0,mixed,0,Entry Requirements,P
+10,0,0,3,1,0,mixed,0,2.4,P
+10,0,0,29,0,0,mixed,0,Structure and Course Duration,P
+10,0,0,3,1,0,mixed,0,2.5,P
+10,0,0,18,0,0,mixed,0,Keeping It Current,P
+10,0,0,3,1,0,mixed,0,2.6,P
+10,0,0,117,0,0,mixed,0,.....................................................................................................................,P
+10,0,0,108,0,0,mixed,0,............................................................................................................,P
+10,0,0,115,0,0,mixed,0,...................................................................................................................,P
+10,0,0,115,0,0,mixed,0,...................................................................................................................,P
+10,0,0,99,0,0,mixed,0,...................................................................................................,P
+10,0,0,118,0,0,mixed,0,......................................................................................................................,P
+10,0,0,1,0,0,mixed,0,7,P
+10,0,0,1,0,0,mixed,0,7,P
+10,0,0,1,0,0,mixed,0,7,P
+10,0,0,1,0,0,mixed,0,8,P
+10,0,0,1,0,0,mixed,0,8,P
+10,0,0,1,0,0,mixed,0,9,P
+10,1,0,67,1,0,mixed,0,3. Overview of the Foundation Level Extension Agile Tester Syllabus,H3
+10,1,0,41,0,0,mixed,0,.........................................,P
+10,1,0,2,0,0,mixed,0,10,P
+10,0,0,3,1,0,mixed,0,3.1,P
+10,0,0,11,1,0,mixed,0,3.2 Content,P
+10,0,0,17,0,0,mixed,0,Business Outcomes,P
+10,0,0,113,0,0,mixed,0,.................................................................................................................,P
+10,0,0,132,0,0,mixed,0,....................................................................................................................................,P
+10,0,0,2,0,0,mixed,0,10,P
+10,0,0,2,0,0,mixed,0,10,P
+10,1,0,13,1,0,mixed,0,4. References,H3
+10,1,0,138,0,0,mixed,0,..........................................................................................................................................,P
+10,1,0,2,0,0,mixed,0,12,P
+10,0,0,10,0,0,sentence,0,Trademarks,P
+10,0,0,3,1,0,mixed,0,4.1,P
+10,0,0,27,1,0,mixed,0,4.2 Documents and Web Sites,P
+10,0,0,125,0,0,mixed,0,.............................................................................................................................,P
+10,0,0,103,0,0,mixed,0,.......................................................................................................,P
+10,0,0,2,0,0,mixed,0,12,P
+10,0,0,2,0,0,mixed,0,12,P
+10,0,0,12,0,0,sentence,0,Version 2014,P
+10,0,0,12,0,0,sentence,0,Page 4 of 12,P
+10,0,0,12,0,0,sentence,0,"May 31, 2014",P
+6,0,0,51,0,0,mixed,0,International Software Testing Qualifications Board,P
+12,0,0,8,0,1,sentence,0,Overview,P
+10,0,0,39,0,0,mixed,0,Foundation Level Extension Agile Tester,P
+10,0,0,13,0,0,sentence,0,International,P
+10,0,0,16,0,0,mixed,0,Software Testing,P
+10,0,0,20,0,0,mixed,0,Qualifications Board,P
+16,0,0,16,0,1,sentence,0,Acknowledgements,H2
+10,0,0,97,0,0,mixed,0,This document was produced by a team from the International Software Testing Qualifications Board,P
+10,0,0,31,0,0,mixed,0,Foundation Level Working Group.,P
+10,0,0,104,0,0,mixed,0,The Agile Extension team thanks the review team and the National Boards for their suggestions and input.,P
+10,0,0,100,0,0,mixed,0,"At the time the Foundation Level Agile Extension Syllabus was completed, the Agile Extension Working",P
+10,0,0,94,0,0,mixed,0,"Group had the following membership: Rex Black (Chair), Bertrand Cornanguer (Vice Chair), Gerry",P
+10,0,0,99,0,0,mixed,0,"Coleman (Learning Objectives Lead), Debra Friedenberg (Exam Lead), Alon Linetzki (Business Outcomes",P
+10,0,0,88,0,0,mixed,0,"and Marketing Lead), Tauhida Parveen (Editor), and Leo van der Aalst (Development Lead).",P
+10,0,0,93,0,0,mixed,0,"Authors: Rex Black, Anders Claesson, Gerry Coleman, Bertrand Cornanguer, Istvan Forgacs, Alon",P
+10,0,0,71,0,0,mixed,0,"Linetzki, Tilo Linz, Leo van der Aalst, Marie Walsh, and Stephan Weber.",P
+10,0,0,89,0,0,mixed,0,"Internal Reviewers: Mette Bruhn-Pedersen, Christopher Clements, Alessandro Collino, Debra",P
+10,0,0,97,0,0,mixed,0,"Friedenberg, Kari Kakkonen, Beata Karpinska, Sammy Kolluru, Jennifer Leger, Thomas Mueller, Tuula",P
+10,0,0,91,0,0,mixed,0,"Pkknen, Meile Posthuma, Gabor Puhalla, Lloyd Roden, Marko Rytknen, Monika Stoecklein-Olsen,",P
+10,0,0,56,0,0,mixed,0,"Robert Treffny, Chris Van Bael, and Erik van Veenendaal.",P
+10,0,0,100,0,0,mixed,0,"The team thanks also the following persons, from the National Boards and the Agile expert community,",P
+10,0,0,105,0,0,mixed,0,"who participated in reviewing, commenting, and balloting of the Foundation Agile Extension Syllabus: Dani",P
+10,0,0,94,0,0,mixed,0,"Almog, Richard Berns, Stephen Bird, Monika Bgge, Afeng Chai, Josephine Crawford, Tibor Csndes,",P
+10,0,0,99,0,0,mixed,0,"Huba Demeter, Arnaud Foucal, Cyril Fumery, Kobi Halperin, Inga Hansen, Hanne Hinz, Jidong Hu, Phill",P
+10,0,0,109,0,0,mixed,0,"Isles, Shirley Itah, Martin Klonk, Kjell Lauren, Igal Levi, Rik Marselis, Johan Meivert, Armin Metzger, Peter",P
+10,0,0,97,0,0,mixed,0,"Morgan, Ninna Morin, Ingvar Nordstrom, Chris ODea, Klaus Olsen, Ismo Paukamainen, Nathalie Phung,",P
+10,0,0,100,0,0,mixed,0,"Helmut Pichler, Salvatore Reale, Stuart Reid, Hans Rombouts, Petri Silynoja, Soile Sainio, Lars-Erik",P
+10,0,0,92,0,0,mixed,0,"Sandberg, Dakar Shalom, Jian Shen, Marco Sogliani, Lucjan Stapp, Yaron Tsubery, Sabine Uhde,",P
+10,0,0,97,0,0,mixed,0,"Stephanie Ulrich, Tommi Vlimki, Jurian Van de Laar, Marnix Van den Ent, Antnio Vieira Melo, Wenye",P
+10,0,0,81,0,0,mixed,0,"Xu, Ester Zabar, Wenqiang Zheng, Peter Zimmerer, Stevan Zivanovic, and Terry Zuo.",P
+10,0,0,95,0,0,mixed,0,"This document was formally approved for release by the General Assembly of the ISTQB on May 31,",P
+10,0,0,5,1,0,mixed,0,2014,P
+10,0,0,12,0,0,sentence,0,Version 2014,P
+10,0,0,12,0,0,sentence,0,Page 5 of 12,P
+10,0,0,12,0,0,sentence,0,"May 31, 2014",P
+6,0,0,51,0,0,mixed,0,International Software Testing Qualifications Board,P
+12,0,0,8,0,1,sentence,0,Overview,P
+10,0,0,39,0,0,mixed,0,Foundation Level Extension Agile Tester,P
+10,0,0,13,0,0,sentence,0,International,P
+10,0,0,16,0,0,mixed,0,Software Testing,P
+10,0,0,20,0,0,mixed,0,Qualifications Board,P
+16,0,0,50,1,1,mixed,0,1. Introduction to the Foundation Level Extensions,H1
+10,0,0,92,0,0,mixed,0,This overview document is intended for anyone with an interest in the ISTQB Foundation Level,P
+10,0,0,106,0,0,sentence,0,Extensions who wants a high-level introduction to the leading principles and an overview of the individual,P
+10,0,0,18,0,0,lower,0,extension syllabi.,P
+10,0,0,101,0,0,mixed,0,"From time to time, ISTQB will update this document to reflect any additional extensions that shall be",P
+10,0,0,102,0,0,mixed,0,"introduced for the Foundation Level, or to reflect major changes in existing ones. Publications of the",P
+10,0,0,56,0,0,mixed,0,updated document will be available on the ISTQB website.,P
+10,0,0,97,0,0,mixed,0,The ISTQB Foundation and Advanced Level syllabi have been defined and have been on the market for,P
+10,0,0,96,0,0,mixed,0,some time. New topics emerge due to technology and methodology changes in the market which often,P
+10,0,0,106,0,0,mixed,0,"are brought into the ISTQB program as new Expert Level syllabi. However, not all topics are suited for the",P
+10,0,0,106,0,0,mixed,0,"Expert Level. For this reason, the extension syllabi are established at the Foundation Level to expand the",P
+10,0,0,92,0,0,mixed,0,ISTQB program to incorporate new or updated knowledge. New extensions shall be discussed and,P
+10,0,0,102,0,0,mixed,0,"introduced by the ISTQB periodically. Extensions may be established at the Advanced Level as well, but",P
+10,0,0,42,0,0,lower,0,that is beyond the scope of this document.,P
+10,0,0,68,0,0,mixed,0,The following Foundation Level Extension syllabus has been released:,P
+10,0,0,12,0,0,mixed,0,Agile Tester,P
+10,0,0,100,0,0,mixed,0,"In this document, each Foundation Level Extension syllabus is summarized and the associated Business",P
+10,0,0,93,0,0,mixed,0,Outcomes are stated. The Business Outcomes communicate what can be expected from a person who,P
+10,0,0,106,0,0,mixed,0,"achieves a Foundation Level Extension Certification in a particular subject area (e.g., Agile Tester), and",P
+10,0,0,111,0,0,lower,0,will outline the benefits for companies that are considering the development of specific testing skills at this,P
+10,0,0,6,0,0,lower,0,level.,P
+10,0,0,12,0,0,sentence,0,Version 2014,P
+10,0,0,12,0,0,sentence,0,Page 6 of 12,P
+10,0,0,12,0,0,sentence,0,"May 31, 2014",P
+6,0,0,51,0,0,mixed,0,International Software Testing Qualifications Board,P
+12,0,0,8,0,1,sentence,0,Overview,P
+10,0,0,39,0,0,mixed,0,Foundation Level Extension Agile Tester,P
+10,0,0,13,0,0,sentence,0,International,P
+10,0,0,16,0,0,mixed,0,Software Testing,P
+10,0,0,20,0,0,mixed,0,Qualifications Board,P
+16,0,0,58,1,1,mixed,0,2. Introduction to Foundation Level Agile Tester Extension,H1
+10,0,0,99,0,0,mixed,0,The certification for Foundation Level Extension Agile Tester is designed for professionals who are,P
+10,0,0,34,0,0,mixed,0,working within Agile environments.,P
+10,0,0,67,0,0,sentence,0,It is also for professionals who are planning to start implementing,P
+10,0,0,103,0,0,mixed,0,"Agile methods in the near future, or are working within companies that plan to do so, The certification",P
+10,0,0,105,0,0,mixed,0,"provides an advantage for those who would like to know the required Agile activities, roles, methods, and",P
+10,0,0,37,0,0,lower,0,methodologies specific to their role.,P
+14,0,0,21,1,1,mixed,0,2.1 Intended Audience,H2
+10,0,0,104,0,0,mixed,0,The Foundation Level Extension Agile Tester qualification is aimed at four main groups of professionals:,P
+10,0,0,95,1,0,mixed,0,1. Professionals who have achieved in-depth testing experience in traditional methods and would,P
+10,0,0,40,0,0,mixed,0,like to get an Agile Tester Certificate.,P
+10,0,0,97,1,0,mixed,0,"2. Junior professional testers who are just starting in the testing profession, have received the",P
+10,0,0,92,0,0,mixed,0,"Foundation Level certificate, and would like to know more about the testers role in an Agile",P
+10,0,0,12,0,0,lower,0,environment.,P
+10,0,0,97,1,0,mixed,0,"3. Professionals who are relatively new to testing and are required to implement test approaches,",P
+10,0,0,65,0,0,mixed,0,methods and techniques in their day to day job in Agile projects.,P
+10,0,0,89,1,0,mixed,0,4. Professionals who are experienced in their role (including unit testing) and need more,P
+10,0,0,90,0,0,mixed,0,understanding and knowledge about how to perform and manage testing on all levels in Agile,P
+10,0,0,9,0,0,lower,0,projects.,P
+10,0,0,104,0,0,sentence,0,"These professionals include people who are in roles such as testers, test analysts, test engineers, test",P
+10,0,0,77,0,0,lower,0,"consultants, test managers, user acceptance testers, and software developers.",P
+10,0,0,97,0,0,mixed,0,This Foundation Level Extension Agile Tester certification may also be appropriate for anyone who,P
+10,0,0,102,0,0,mixed,0,"wants a deeper understanding of software testing in the Agile world, such as project managers, quality",P
+10,0,0,59,0,0,lower,0,"managers, software development managers, business analysts,",P
+10,0,0,28,0,0,mixed,0,"IT directors, and management",P
+10,0,0,12,0,0,lower,0,consultants.,P
+14,0,0,28,1,1,mixed,0,2.2 Career Paths for Testers,H2
+10,0,0,104,0,0,mixed,0,"Building on the Foundation Level, the Agile Tester Extension supports the definition of career paths for",P
+10,0,0,104,0,0,mixed,0,professional testers. A person with the Agile Tester certificate has extended the broad understanding of,P
+10,0,0,109,0,0,mixed,0,testing acquired at the Foundation Level to enable him or her to work effectively as a professional tester in,P
+10,0,0,17,0,0,mixed,0,an Agile project.,P
+10,0,0,100,0,0,mixed,0,People possessing an ISTQB Foundation Level Extension Agile Tester certificate may use the Certified,P
+10,0,0,40,0,0,mixed,0,Tester Foundation Level acronym CTFL-AT.,P
+14,0,0,23,1,1,mixed,0,2.3 Learning Objectives,H2
+10,0,0,106,0,0,mixed,0,"In general, the Foundation Level syllabus is examinable at a K1 level, i.e., the candidate will recognize,",P
+10,0,0,79,0,0,mixed,0,remember and recall terms and concepts stated in the Foundation Level syllabus.,P
+10,0,0,104,0,0,mixed,0,"In addition, all Foundation Level syllabus learning objectives are examinable at the same K- level in an",P
+10,0,0,15,0,0,lower,0,extension exam.,P
+10,0,0,12,0,0,sentence,0,Version 2014,P
+10,0,0,12,0,0,sentence,0,Page 7 of 12,P
+10,0,0,12,0,0,sentence,0,"May 31, 2014",P
+6,0,0,51,0,0,mixed,0,International Software Testing Qualifications Board,P
+12,0,0,8,0,1,sentence,0,Overview,P
+10,0,0,39,0,0,mixed,0,Foundation Level Extension Agile Tester,P
+10,0,0,13,0,0,sentence,0,International,P
+10,0,0,16,0,0,mixed,0,Software Testing,P
+10,0,0,20,0,0,mixed,0,Qualifications Board,P
+10,0,0,97,0,0,sentence,0,"That said, each extension level exam focuses on the learning objectives defined in that extension",P
+10,0,0,105,0,0,mixed,0,"syllabus. The relevant learning objectives at K1, K2, and K3 levels are provided at the beginning of each",P
+10,0,0,50,0,0,lower,0,chapter within each particular extension syllabus.,P
+14,0,0,22,1,1,mixed,0,2.4 Entry Requirements,H2
+10,0,0,97,0,0,mixed,0,"To be able to participate in a Foundation Level Extension Agile Tester exam, candidates must have",P
+10,0,0,48,0,0,mixed,0,obtained the ISTQB Foundation Level certificate.,P
+14,0,0,33,1,1,mixed,0,2.5 Structure and Course Duration,H2
+10,0,0,94,0,0,mixed,0,The Foundation Level Extension Agile Tester syllabus has no shared or common elements with the,P
+10,0,0,26,0,0,mixed,0,Foundation Level syllabus.,P
+10,0,0,67,0,0,sentence,0,The syllabi must be taught in the following minimum number of days:,P
+10,1,0,8,0,0,sentence,0,Syllabus,P
+10,0,0,20,0,0,mixed,0,Baseline: Foundation,P
+10,0,0,23,0,0,mixed,0,Extension: Agile Tester,P
+10,1,0,4,0,0,sentence,0,Days,P
+10,0,0,1,0,0,mixed,0,3,P
+10,0,0,1,0,0,mixed,0,2,P
+10,0,0,98,0,0,mixed,0,The following figure shows the structure of the Agile Tester Extension and its relationship to the,P
+10,0,0,17,0,0,mixed,0,Foundation Level.,P
+10,0,0,12,0,0,sentence,0,Version 2014,P
+10,0,0,12,0,0,sentence,0,Page 8 of 12,P
+10,0,0,12,0,0,sentence,0,"May 31, 2014",P
+6,0,0,51,0,0,mixed,0,International Software Testing Qualifications Board,P
+12,0,0,8,0,1,sentence,0,Overview,P
+10,0,0,39,0,0,mixed,0,Foundation Level Extension Agile Tester,P
+10,0,0,13,0,0,sentence,0,International,P
+10,0,0,16,0,0,mixed,0,Software Testing,P
+10,0,0,20,0,0,mixed,0,Qualifications Board,P
+14,0,0,22,1,1,mixed,0,2.6 Keeping It Current,H2
+10,0,0,102,0,0,mixed,0,The software industry changes rapidly. To deal with these changes and to provide the stakeholders with,P
+10,0,0,94,0,0,mixed,0,"access to relevant and current information, the ISTQB working groups have created links on the",P
+10,0,0,100,0,0,lower,0,"www.istqb.org web site which refer to supporting documents, changes to standards and new occurrences",P
+10,0,0,72,0,0,mixed,0,in the industry. This information is not examinable under this syllabus.,P
+10,0,0,12,0,0,sentence,0,Version 2014,P
+10,0,0,12,0,0,sentence,0,Page 9 of 12,P
+10,0,0,12,0,0,sentence,0,"May 31, 2014",P
+6,0,0,51,0,0,mixed,0,International Software Testing Qualifications Board,P
+12,0,0,8,0,1,sentence,0,Overview,P
+10,0,0,39,0,0,mixed,0,Foundation Level Extension Agile Tester,P
+10,0,0,13,0,0,sentence,0,International,P
+10,0,0,16,0,0,mixed,0,Software Testing,P
+10,0,0,20,0,0,mixed,0,Qualifications Board,P
+16,0,0,58,1,1,mixed,0,3. Overview of the Foundation Level Extension Agile Tester,H1
+16,1,0,8,0,1,sentence,0,Syllabus,H1
+14,0,0,21,1,1,mixed,0,3.1 Business Outcomes,H2
+10,0,0,102,0,0,mixed,0,This section lists the Business Outcomes expected of a candidate who has achieved the Foundation Level,P
+10,0,0,37,0,0,mixed,0,Extension Agile Tester certification.,P
+10,0,0,19,0,0,mixed,0,An Agile Tester can,P
+10,0,0,90,0,0,mixed,0,AFM1 Collaborate in a cross-functional Agile team being familiar with principles and basic,P
+10,0,0,40,0,0,mixed,0,practices of Agile software development.,P
+10,0,0,84,0,0,mixed,0,AFM2 Adapt existing testing experience and knowledge to Agile values and principles.,P
+10,0,0,64,0,0,mixed,0,AFM3 Support the Agile team in planning test-related activities.,P
+10,0,0,75,0,0,mixed,0,AFM4 Apply relevant methods and techniques for testing in an Agile project.,P
+10,0,0,57,0,0,mixed,0,AFM5 Assist the Agile team in test automation activities.,P
+10,0,0,87,0,0,mixed,0,"AFM6 Assist business stakeholders in defining understandable and testable user stories,",P
+10,0,0,63,0,0,lower,0,"scenarios, requirements and acceptance criteria as appropriate.",P
+10,0,0,85,0,0,mixed,0,AFM7 Work and share information with other team members using effective communication,P
+10,0,0,20,0,0,lower,0,styles and channels.,P
+10,0,0,103,0,0,mixed,0,"In general, a Certified Tester Foundation Level Agile Tester is expected to have acquired the necessary",P
+10,0,0,67,0,0,mixed,0,skills to working effectively within an Agile team and environment.,P
+14,0,0,11,1,1,mixed,0,3.2 Content,H2
+10,0,0,37,0,0,mixed,0,Chapter 1: Agile Software Development,P
+10,0,0,93,0,0,mixed,0,The tester should remember the basic concept of Agile software development based on the Agile,P
+10,0,0,10,0,0,sentence,0,Manifesto.,P
+10,0,0,90,0,0,sentence,0,The tester should understand the advantages of the whole-team approach and the benefits of,P
+10,0,0,28,0,0,lower,0,early and frequent feedback.,P
+10,0,0,63,0,0,mixed,0,The tester should recall Agile software development approaches.,P
+10,0,0,93,0,0,sentence,0,The tester should be able to write testable user stories in collaboration with developers and,P
+10,0,0,25,0,0,lower,0,business representatives.,P
+10,0,0,86,0,0,sentence,0,The tester should understand how retrospectives can be used as a mechanism for process,P
+10,0,0,30,0,0,mixed,0,improvement in Agile projects.,P
+10,0,0,75,0,0,sentence,0,The tester should understand the use and purpose of continuous integration.,P
+10,0,0,95,0,0,sentence,0,"The tester should know the differences between iteration and release planning, and how a tester",P
+10,0,0,39,0,0,lower,0,adds value in each of these activities.,P
+10,0,0,12,0,0,sentence,0,Version 2014,P
+10,0,0,13,0,0,sentence,0,Page 10 of 12,P
+10,0,0,12,0,0,sentence,0,"May 31, 2014",P
+6,0,0,51,0,0,mixed,0,International Software Testing Qualifications Board,P
+12,0,0,8,0,1,sentence,0,Overview,P
+10,0,0,39,0,0,mixed,0,Foundation Level Extension Agile Tester,P
+10,0,0,13,0,0,sentence,0,International,P
+10,0,0,16,0,0,mixed,0,Software Testing,P
+10,0,0,20,0,0,mixed,0,Qualifications Board,P
+10,0,0,73,0,0,mixed,0,"Chapter 2: Fundamental Agile Testing Principles, Practices, and Processes",P
+10,0,0,98,0,0,mixed,0,The tester should be able to describe the differences between testing activities in Agile projects,P
+10,0,0,23,0,0,mixed,0,and non-Agile projects.,P
+10,0,0,94,0,0,sentence,0,The tester should be able to describe how development and testing activities are integrated in,P
+10,0,0,15,0,0,sentence,0,Agile projects.,P
+10,0,0,88,0,0,mixed,0,The tester should be able to describe the role of independent testing in Agile projects.,P
+10,0,0,96,0,0,sentence,0,The tester should be able to describe the tools and techniques used to communicate the status of,P
+10,0,0,73,0,0,mixed,0,"testing in an Agile project, including test progress and product quality.",P
+10,0,0,98,0,0,sentence,0,The tester should be able to describe the process of evolving tests across multiple iterations and,P
+10,0,0,85,0,0,mixed,0,explain why test automation is important to manage regression risk in Agile projects.,P
+10,0,0,99,0,0,mixed,0,"The tester should understand the skills (people, domain, and testing) of a tester in an Agile team.",P
+10,0,0,82,0,0,mixed,0,The tester should be able to understand the role of a tester within an Agile team.,P
+10,0,0,55,0,0,mixed,0,"Chapter 3: Agile Testing Methods, Techniques, and Tools",P
+10,0,0,93,0,0,sentence,0,"The tester should be able to recall the concepts of test-driven development, acceptance test-",P
+10,0,0,52,0,0,lower,0,"driven development, and behavior-driven development.",P
+10,0,0,69,0,0,sentence,0,The tester should be able to recall the concepts of the test pyramid.,P
+10,0,0,97,0,0,sentence,0,The tester should be able to summarize the testing quadrants and their relationships with testing,P
+10,0,0,25,0,0,lower,0,levels and testing types.,P
+10,0,0,89,0,0,mixed,0,"For a given Agile project, the tester should be able to work as a tester in a Scrum team.",P
+10,0,0,74,0,0,mixed,0,The tester should be able to assess quality risks within an Agile project.,P
+10,0,0,98,0,0,sentence,0,The tester should be able to estimate testing effort based on iteration content and quality risks.,P
+10,0,0,90,0,0,sentence,0,The tester should be able to interpret relevant information to support testing activities.,P
+10,0,0,95,0,0,sentence,0,The tester should be able to explain to business stakeholders how to define testable acceptance,P
+10,0,0,9,0,0,lower,0,criteria.,P
+10,0,0,94,0,0,sentence,0,"Given a user story, the tester should be able to write acceptance test-driven development test",P
+10,0,0,6,0,0,lower,0,cases.,P
+10,0,0,100,0,0,sentence,0,"For both functional and non-functional behavior, the tester should be able to write test cases using",P
+10,0,0,61,0,0,lower,0,black box test design techniques based on given user stories.,P
+10,0,0,100,0,0,mixed,0,The tester should be able to perform exploratory testing to support the testing of an Agile project.,P
+10,0,0,99,0,0,sentence,0,The tester should be able to recall different tools available to testers according to their purpose,P
+10,0,0,36,0,0,mixed,0,and to activities in Agile projects.,P
+10,0,0,12,0,0,sentence,0,Version 2014,P
+10,0,0,13,0,0,sentence,0,Page 11 of 12,P
+10,0,0,12,0,0,sentence,0,"May 31, 2014",P
+6,0,0,51,0,0,mixed,0,International Software Testing Qualifications Board,P
+12,0,0,8,0,1,sentence,0,Overview,P
+10,0,0,39,0,0,mixed,0,Foundation Level Extension Agile Tester,P
+10,0,0,13,0,0,sentence,0,International,P
+10,0,0,16,0,0,mixed,0,Software Testing,P
+10,0,0,20,0,0,mixed,0,Qualifications Board,P
+16,0,0,13,1,1,mixed,0,4. References,H1
+14,0,0,14,1,1,mixed,0,4.1 Trademarks,H2
+10,0,0,80,0,0,sentence,0,The following registered trademarks and service marks are used in this document:,P
+10,0,0,90,0,0,mixed,0,ISTQB is a registered trademark of the International Software Testing Qualifications Board,P
+14,0,0,27,1,1,mixed,0,4.2 Documents and Web Sites,H2
+10,1,0,10,0,0,sentence,0,Identifier,P
+10,0,0,11,0,0,mixed,0,[ISTQB-Web],P
+10,1,0,9,0,0,sentence,0,Reference,P
+10,0,0,74,0,0,mixed,0,Web site of the International Software Testing Qualifications Board. Refer,P
+10,0,0,74,0,0,mixed,0,to this website for the latest ISTQB Glossary and Syllabi. (www.istqb.org),P
+10,0,0,12,0,0,sentence,0,Version 2014,P
+10,0,0,13,0,0,sentence,0,Page 12 of 12,P
+10,0,0,12,0,0,sentence,0,"May 31, 2014",P
+6,0,0,51,0,0,mixed,0,International Software Testing Qualifications Board,P
+10,0,0,34,0,0,mixed,0,Commerce 1AA3 - Fall 2014 - 1 of 9,H1
+16,1,0,13,0,1,mixed,0,Commerce 1AA3,H1
+16,1,0,45,0,1,mixed,0,Financial Accounting Fall 2014 Course Outline,H1
+16,1,0,49,0,1,mixed,0,Accounting and Financial Management Services Area,H1
+16,1,0,27,0,1,mixed,0,DeGroote School of Business,H1
+16,1,0,19,0,1,mixed,0,McMaster University,H1
+14,1,0,16,0,1,upper,0,COURSE OBJECTIVE,H2
+12,0,0,95,0,0,sentence,0,This course will help all students (whether or not they plan a career in accounting) understand,P
+12,0,0,96,0,0,lower,0,"why accounting exists, how it is implemented, its usefulness for decision making, how it affects",P
+12,0,0,80,0,0,lower,0,behaviour and contracts and why there are controversies over accounting methods.,P
+12,0,0,43,0,0,sentence,0,The specific objectives of this course are:,P
+12,0,0,90,0,0,mixed,0,1) Help students develop a thorough understanding of accounting procedures and the choices,P
+12,0,0,53,0,0,lower,0,possible in preparing corporate financial statements.,P
+12,0,0,91,0,0,mixed,0,"2) Help students become intelligent readers and users of corporate financial reports, which",P
+12,0,0,86,0,0,lower,0,"include the fundamental statements (balance sheet, income statement, retained earnings",P
+12,0,0,81,0,0,lower,0,"statement, and cash flow statement) plus explanatory notes, auditors report, etc.",P
+12,0,0,90,0,0,mixed,0,3) Develop students appreciation of the usefulness and limitations of financial accounting,P
+12,0,0,12,0,0,lower,0,information.,P
+14,1,0,34,0,1,upper,0,INSTRUCTOR AND CONTACT INFORMATION,H2
+12,1,0,22,0,0,mixed,0,Section 1-3: Weeks 1-4,H3
+12,1,0,17,0,0,mixed,0,Dr. Emad Mohammad,H3
+12,0,0,17,0,0,lower,0,mohde@mcmaster.ca,P
+12,0,0,15,0,0,mixed,0,Office: DSB 317,P
+12,0,0,47,0,0,mixed,0,"Office Hours: 9:30-11:20, Thursdays and Fridays",P
+12,0,0,26,0,0,sentence,0,Tel: (905) 525-9140 x27432,P
+12,0,0,23,0,0,mixed,0,Class Location: JHE 376,P
+12,1,0,23,0,0,mixed,0,Section 1-3: Weeks 5-12,H3
+12,1,0,12,0,0,mixed,0,Aadil Merali,H3
+12,0,0,18,0,0,lower,0,merali@mcmaster.ca,P
+12,0,0,15,0,0,mixed,0,Office: DSB 318,P
+12,0,0,36,0,0,mixed,0,Office Hours: Tuesday 9:30 11:00 and,P
+12,0,0,10,0,0,mixed,0,12:30 2:00,P
+12,0,0,26,0,0,sentence,0,Tel: (905) 525-9140 x24630,P
+12,0,0,23,0,0,mixed,0,Class Location: JHE 376,P
+12,1,0,55,0,0,mixed,0,Teaching Assistants: Information to be posted on Avenue,H3
+12,1,0,41,0,0,mixed,0,Course Website: http://avenue.mcmaster.ca,H3
+14,1,0,15,0,1,upper,0,COURSE ELEMENTS,H2
+11,0,0,13,0,0,mixed,0,Credit Value:,P
+11,0,0,7,0,0,sentence,0,Avenue:,P
+11,0,0,14,0,0,sentence,0,Participation:,P
+11,0,0,15,0,0,sentence,0,Evidence-based:,P
+11,0,0,1,0,0,mixed,0,3,P
+11,0,0,3,0,0,sentence,0,Yes,P
+11,0,0,3,0,0,sentence,0,Yes,P
+11,0,0,3,0,0,sentence,0,Yes,P
+11,0,0,14,0,0,mixed,0,Leadership: No,P
+11,0,0,11,0,0,mixed,0,Ethics: Yes,P
+11,0,0,14,0,0,mixed,0,Innovation: No,P
+11,0,0,16,0,0,mixed,0,Experiential: No,P
+11,0,0,14,0,0,mixed,0,IT skills: Yes,P
+11,0,0,16,0,0,mixed,0,Global view: Yes,P
+11,0,0,13,0,0,mixed,0,Numeracy: Yes,P
+11,0,0,19,0,0,mixed,0,Written skills: Yes,P
+11,0,0,15,0,0,mixed,0,Oral skills: No,P
+11,0,0,14,0,0,mixed,0,Group work: No,P
+11,0,0,37,0,0,mixed,0,Final Exam: Yes Guest speaker(s): Yes,P
+10,0,0,24,0,0,lower,0,www.degroote.mcmaster.ca,P
+10,0,0,34,0,0,mixed,0,Commerce 1AA3 - Fall 2014 - 2 of 9,P
+14,1,0,18,0,1,upper,0,COURSE DESCRIPTION,H2
+12,0,0,93,0,0,mixed,0,This course provides an introduction to the fundamental concepts of financial accounting. The,P
+12,0,0,96,0,0,lower,0,focus of this course will be on how accounting is used for recording economic events and for the,P
+12,0,0,91,0,0,mixed,0,"financial reporting, primarily to users external to business organizations. The course will",P
+12,0,0,87,0,0,lower,0,"emphasize underlying concepts and principles, as well as cover accounting procedures in",P
+12,0,0,92,0,0,lower,0,sufficient detail to enable students to record accounting transactions and prepare financial,P
+12,0,0,86,0,0,mixed,0,statements. A major emphasis in the course will be on understanding the information in,P
+12,0,0,90,0,0,lower,0,corporate financial reports and its use by individuals external to a corporation in making,P
+12,0,0,93,0,0,mixed,0,investment and contracting decisions. The course will examine alternative accounting policies,P
+12,0,0,90,0,0,lower,0,"and methods that may legitimately be used in financial reporting, and motivations that may",P
+12,0,0,42,0,0,lower,0,influence managers in choosing among them.,P
+14,1,0,24,0,1,upper,0,COURSE LEARNING OUTCOMES,H2
+12,0,0,57,0,0,sentence,0,"Upon completion of this course, students will be able to:",P
+12,0,0,43,1,0,mixed,0,1. Read and understand financial statements,P
+12,0,0,95,1,0,mixed,0,"2. Understand the accounting conceptual framework, and relate it to all accounting transactions",P
+12,0,0,96,1,0,mixed,0,"3. Understand the accounting cycle and implement all its steps including analyzing, journalizing",P
+12,0,0,94,0,0,lower,0,"and posting accounting transactions, preparing end-of-period adjusting entries, preparing pre-",P
+12,0,0,71,0,0,lower,0,"and post-adjusting entries trial balance, and preparing closing entries",P
+12,0,0,88,1,0,mixed,0,"4. Prepare financial statements such as the Statement of Earnings, Statement of Retained",P
+12,0,0,87,0,0,mixed,0,"Earnings, Statement of Changes in Equity, Statement of Financial Position, Statement of",P
+12,0,0,10,0,0,mixed,0,Cash Flows,P
+12,0,0,92,1,0,mixed,0,5. Analyze internal control issues and employ some procedures to deal with them such as Bank,P
+12,0,0,24,0,0,mixed,0,Reconciliation Statement,P
+12,0,0,93,1,0,mixed,0,6. Record and measure of individual elements within the financial statements such as accounts,P
+12,0,0,91,0,0,lower,0,"receivable, allowances, contingencies, inventory, long term depreciable and non-depreciable",P
+12,0,0,69,0,0,lower,0,"assets, short term and long term liabilities, and shareholders equity",P
+12,0,0,94,1,0,mixed,0,7. Analyze and interpret financial statements using ratio analysis and vertical and horizontal,P
+12,0,0,58,0,0,lower,0,ratio analysis with industry and within the firm over time,P
+14,1,0,38,0,1,upper,0,REQUIRED COURSE MATERIALS AND READINGS,H2
+12,0,0,67,0,0,sentence,0,"Avenue registration for course content, readings and case materials",P
+10,0,0,25,0,0,lower,1,http://avenue.mcmaster.ca,P
+12,0,0,65,0,0,mixed,0,Pearson My Accounting Course (My Accounting Lab + Course Connect),P
+12,0,0,50,0,0,mixed,0,"5th Canadian Edition by Harrison, Horngren, Thomas",P
+10,0,0,53,0,0,lower,1,http://www.pearsonmylabandmastering.com/northamerica/,P
+12,0,0,6,0,0,upper,0,$ FREE,P
+12,0,0,7,0,0,mixed,0,$65.00,P
+10,0,0,24,0,0,lower,0,www.degroote.mcmaster.ca,P
+10,0,0,34,0,0,mixed,0,Commerce 1AA3 - Fall 2014 - 3 of 9,P
+14,1,0,10,0,1,upper,0,EVALUATION,H2
+12,0,0,92,0,0,sentence,0,The final grade will be calculated in the first instance from the grades obtained on the one,P
+12,0,0,91,0,0,lower,0,"midterm examination, eight best online-assessment marks out of nine in total, and the final",P
+12,0,0,90,0,0,mixed,0,examination. The assessments/examinations and their weightings in the determination of the,P
+12,0,0,16,0,0,lower,0,final grade are:,P
+14,1,1,22,0,1,mixed,0,Components and Weights,H2
+12,0,0,12,0,0,mixed,0,Midterm Exam,P
+12,0,0,46,0,0,mixed,0,"Saturday October 18th, 2014 @ noon for 2 hours",P
+12,0,0,10,0,0,mixed,0,Final Exam,P
+12,0,0,39,0,0,lower,0,3 hours scheduled through the registrar,P
+12,0,0,14,0,0,mixed,0,Online Quizzes,P
+12,0,0,51,0,0,lower,0,8 best online quizzes out of 9 total quizzes @ 2.5%,P
+12,0,0,4,0,0,lower,0,each,P
+12,0,0,5,0,0,sentence,0,Total,P
+12,0,0,3,0,0,mixed,0,35%,P
+12,0,0,3,0,0,mixed,0,45%,P
+12,0,0,3,0,0,mixed,0,20%,P
+12,0,0,4,0,0,mixed,0,100%,P
+12,0,0,94,0,0,mixed,0,NOTE: The use of a McMaster standard calculator is allowed during examinations in this course.,P
+12,0,0,52,0,0,mixed,0,See McMaster calculator policy at the following URL:,P
+12,0,0,76,0,0,mixed,0,http://www.mcmaster.ca/policy/Students-AcademicStudies/examinationindex.html,P
+14,1,1,16,0,1,mixed,0,Grade Conversion,H2
+12,0,0,96,0,0,sentence,0,At the end of the course your overall percentage grade will be converted to your letter grade in,P
+12,0,0,48,0,0,lower,0,accordance with the following conversion scheme.,P
+9.5,0,0,12,0,0,upper,0,LETTER GRADE,P
+9.5,0,0,7,0,0,upper,0,PERCENT,P
+9.5,0,0,12,0,0,upper,0,LETTER GRADE,P
+9.5,0,0,7,0,0,upper,0,PERCENT,P
+12,0,0,2,0,0,upper,0,A+,P
+12,0,0,1,0,0,upper,0,A,P
+12,0,0,2,0,0,upper,0,A-,P
+12,0,0,2,0,0,upper,0,B+,P
+12,0,0,1,0,0,upper,0,B,P
+12,0,0,2,0,0,upper,0,B-,P
+12,0,0,8,0,0,mixed,0,90 - 100,P
+12,0,0,7,0,0,mixed,0,85 - 89,P
+12,0,0,7,0,0,mixed,0,80 - 84,P
+12,0,0,7,0,0,mixed,0,77 - 79,P
+12,0,0,7,0,0,mixed,0,73 - 76,P
+12,0,0,7,0,0,mixed,0,70 - 72,P
+12,0,0,2,0,0,upper,0,C+,P
+12,0,0,1,0,0,upper,0,C,P
+12,0,0,2,0,0,upper,0,C-,P
+12,0,0,2,0,0,upper,0,D+,P
+12,0,0,1,0,0,upper,0,D,P
+12,0,0,2,0,0,upper,0,D-,P
+12,0,0,1,0,0,upper,0,F,P
+12,0,0,7,0,0,mixed,0,67 - 69,P
+12,0,0,7,0,0,mixed,0,63 - 66,P
+12,0,0,7,0,0,mixed,0,60 - 62,P
+12,0,0,7,0,0,mixed,0,57 - 59,P
+12,0,0,7,0,0,mixed,0,53 - 56,P
+12,0,0,7,0,0,mixed,0,50 - 52,P
+12,0,0,7,0,0,mixed,0,00 - 49,P
+14,1,1,26,0,1,mixed,0,Communication and Feedback,H2
+12,0,0,95,0,0,sentence,0,Students who are uncomfortable in directly approaching an instructor regarding a course concern,P
+12,0,0,86,0,0,mixed,0,may send a confidential email to the respective Area Chair (nainar@mcmaster.ca) or the,P
+12,0,0,37,0,0,mixed,0,Associate Dean (adbusac@mcmaster.ca).,P
+10,0,0,24,0,0,lower,0,www.degroote.mcmaster.ca,P
+10,0,0,34,0,0,mixed,0,Commerce 1AA3 - Fall 2014 - 4 of 9,P
+12,0,0,93,0,0,mixed,0,Students who wish to correspond with instructors or TAs directly via email must send messages,P
+12,0,0,87,0,0,mixed,0,that originate from their official McMaster University email account. This protects the,P
+12,0,0,95,0,0,lower,0,confidentiality and sensitivity of information as well as confirms the identity of the student.,P
+12,0,0,88,0,0,mixed,0,Emails regarding course issues should NOT be sent to the Area Administrative Assistants.,P
+12,0,0,94,0,0,sentence,0,Instructors are required to provide evaluation feedback for at least 10% of the final grade to,P
+12,0,0,38,0,0,mixed,0,students prior to Week #8 in the term.,P
+12,0,0,92,0,0,mixed,0,Instructors may conduct an informal course review with students by Week #4 to allow time for,P
+12,0,0,37,0,0,lower,0,modifications in curriculum delivery.,P
+12,0,0,91,0,0,sentence,0,Students who wish to have a course component re-evaluated must complete the following form:,P
+12,0,0,65,0,0,mixed,0,http://www.mcmaster.ca/policy/Students-AcademicStudies/Form_A.pdf,P
+12,0,0,41,0,0,sentence,0,In order for the component to be re-read:,P
+12,0,0,81,0,0,mixed,0,the Area Chair will seek out an independent adjudicator to re-grade the component,P
+12,0,0,72,0,0,lower,0,the component must be worth 10% or more of the final grade in the course,P
+12,0,0,79,0,0,mixed,1,students pay a fee of $50 in Gilmour Hall #209 (receipt is then brought to APO),P
+12,0,0,91,0,0,lower,1,an adjustment to the grade for the component will be made if a grade change of three points,P
+12,0,0,94,0,0,lower,0,or greater on the 12 point scale (equivalent to 10 marks out of 100) has been suggested by the,P
+12,0,0,41,0,0,mixed,0,adjudicator as assigned by the Area Chair,P
+12,0,0,59,0,0,lower,0,"if a grade change is made, the student fee will be refunded",P
+14,1,1,14,0,1,mixed,0,Online Quizzes,H2
+12,0,0,97,0,0,sentence,0,"Since this is a blended course, online quizzes will be covering materials for new chapters before",P
+12,0,0,96,0,0,mixed,0,they are covered in class. The purpose of this assessment is to make sure that students read the,P
+12,0,0,93,0,0,mixed,0,online materials before class. Each online quiz is worth 2.5% of your final grade and must be,P
+12,0,0,90,0,0,mixed,0,completed only by the student. The quiz will be made available on Avenue from 9:00 p.m. on,P
+12,0,0,94,0,0,mixed,0,"Friday till 11:59pm on Sunday. If an MSAF is used for a quiz, then the 2.5% for that quiz will",P
+12,0,0,80,0,0,mixed,0,be added to the final exam. The online quiz release dates at 9pm are as follows:,P
+12,1,0,4,0,0,sentence,0,Date,P
+12,1,0,8,0,0,sentence,0,Coverage,P
+12,0,0,30,0,0,mixed,0,September 12th Chapter 1 and 2,P
+12,0,0,14,0,0,sentence,0,September 19th,P
+12,0,0,14,0,0,sentence,0,September 26th,P
+12,0,0,6,0,0,sentence,0,Quiz 1,P
+12,0,0,9,0,0,sentence,0,Chapter 3,P
+12,0,0,6,0,0,sentence,0,Quiz 2,P
+12,0,0,10,0,0,sentence,0,Chapter 12,P
+12,0,0,6,0,0,sentence,0,Quiz 3,P
+12,0,0,18,0,0,mixed,0,Quiz 4 October 3rd,P
+12,0,0,15,0,0,sentence,0,Chapter 4 and 5,P
+12,0,0,19,0,0,mixed,0,Quiz 5 October 10th,P
+12,0,0,9,0,0,sentence,0,Chapter 6,P
+12,0,0,19,0,0,mixed,0,Quiz 6 October 24th,P
+12,0,0,9,0,0,sentence,0,Chapter 7,P
+12,0,0,19,0,0,mixed,0,Quiz 7 November 7th,P
+12,0,0,9,0,0,sentence,0,Chapter 9,P
+12,0,0,30,0,0,mixed,0,Quiz 8 November 14th Chapter 9,P
+12,0,0,31,0,0,mixed,0,Quiz 9 November 21st Chapter 10,P
+10,0,0,24,0,0,lower,0,www.degroote.mcmaster.ca,P
+10,0,0,34,0,0,mixed,0,Commerce 1AA3 - Fall 2014 - 5 of 9,P
+14,1,1,12,0,1,mixed,0,Midterm Exam,H2
+12,0,0,91,0,0,mixed,0,The midterm exam is worth 35% of your final grade and will be marked individually. The exam,P
+12,0,0,96,0,0,lower,0,"will cover material from the textbook, readings, lectures, online material, tutorials, and class",P
+12,0,0,93,0,0,mixed,0,discussion. The format of the test will be either True/False questions and/or Multiple Choice,P
+12,0,0,87,0,0,mixed,0,Questions. Past exams from 2006-2012 are available on Avenue for practice. The chapters,P
+12,0,0,93,0,0,mixed,0,"covered on the midterm exam are: Chapter 1, 2, 3, and 12. Two hours will be allocated for the",P
+12,0,0,74,0,0,mixed,0,"midterm exam and the date, time, and location will be announced on Avenue.",P
+14,1,1,10,0,1,sentence,0,Final exam,H2
+12,0,0,94,0,0,mixed,0,The final exam is worth 45% of your final grade and will be marked individually. The exam will,P
+12,0,0,91,0,0,lower,0,"cover material from the textbook, readings, lectures, online material, tutorials, and class",P
+12,0,0,93,0,0,mixed,0,discussion. The format of the test will be either True/False questions and/or Multiple Choice,P
+12,0,0,94,0,0,mixed,0,Questions. Past exams from 2006-2012 are available on Avenue for practice. The final exam will,P
+12,0,0,96,0,0,lower,0,be cumulative in terms of content. 3 hours will be allocated for the final exam and the time and,P
+12,0,0,51,0,0,lower,0,location will be coordinated through the registrar.,P
+14,1,1,22,0,1,mixed,0,The Learning Portfolio,H2
+11,0,0,101,0,0,mixed,0,The purpose of the Learning Portfolio (LP) is to develop a means to capture and enhance your learning,P
+11,0,0,96,0,0,mixed,0,"journey at McMaster. The LP will help you plan, record, understand and develop on a personal and",P
+11,0,0,103,0,0,mixed,0,academic level throughout your learning journey. The online platform on Avenue will enable you to track,P
+11,0,0,104,0,0,mixed,0,and reflect on your personal learning experiences. The LP is not limited to this course only; rather you,P
+11,0,0,94,0,0,mixed,0,"can build your LP as you progress through your studies. At the DeGroote School of Business, we",P
+11,0,0,88,0,0,mixed,0,"designed an interface labeled Learning @ DeGroote, which rests on four pillars: Academic",P
+12,0,0,90,0,0,mixed,0,"Learning, Experiential Learning, Community Learning, and Professional Development. You are",P
+12,0,0,92,0,0,mixed,0,encouraged to start building your own LP by populating these pages with your own reflections,P
+12,0,0,97,0,0,mixed,0,"and experiences. Your inputs to the LP will not be marked for credit. I will, however, reward you",P
+12,0,0,88,0,0,mixed,0,with 2 BONUS points added to your final grade if you populate at least three of the four,P
+12,1,0,92,0,0,mixed,0,"pages with artifacts and reflections. Moreover, I will be more than happy to spend time with",P
+12,0,0,78,0,0,mixed,0,"you, either during or after the term, to give you feedback on your LP entries.",P
+14,1,1,9,0,1,upper,0,TUTORIALS,H2
+12,0,0,90,0,0,mixed,0,"Tutorials will be held each week, starting Monday September 15th, 2014. Attendance will be",P
+12,0,0,98,0,0,mixed,0,"taken at these tutorials. Therefore, you must attend the tutorial to which you have been assigned.",P
+12,0,0,92,0,0,sentence,0,"An adjustment to the calculated grades as above, to a maximum of 3%, will be made based upon",P
+12,0,0,96,0,0,mixed,0,attendance and participation in tutorials. DO NOT SIGN in tutorials on behalf of other students.,P
+12,0,0,90,0,0,mixed,0,"Doing so is considered cheating. Both students will, at minimum, lose all the bonus points",P
+12,0,0,92,0,0,mixed,0,regardless of their attendance record. You are required to be present for the entire hour of,P
+12,1,0,91,0,0,mixed,0,the tutorial for the bonus for that week. You will only be eligible for bonus marks for the,P
+12,1,0,94,0,0,lower,0,"tutorials if you attend at least 5 tutorials during the semester; that is, students who attend",P
+12,1,0,93,0,0,mixed,0,less than 5 tutorials will NOT receive any credit for attendance. Each tutorial will be worth,P
+12,1,0,90,1,0,mixed,0,0.3% of your final mark up to a maximum of 3%. It is your responsibility to sign the sign-,P
+12,1,0,91,0,0,mixed,0,"in sheet if you attend. If a tutorial is cancelled due to a holiday, the bonus mark will be",P
+12,1,0,84,0,0,lower,0,"given to students registered in the relevant tutorial section; however, students are",P
+12,1,0,63,0,0,lower,0,encouraged to attend a different section for learning purposes.,P
+10,0,0,24,0,0,lower,0,www.degroote.mcmaster.ca,P
+10,0,0,34,0,0,mixed,0,Commerce 1AA3 - Fall 2014 - 6 of 9,P
+14,1,0,19,0,1,upper,0,ACADEMIC DISHONESTY,H2
+12,0,0,92,0,0,sentence,0,You are expected to exhibit honesty and use ethical behaviour in all aspects of the learning,P
+12,0,0,87,0,0,mixed,0,process. Academic credentials you earn are rooted in principles of honesty and academic,P
+12,0,0,10,0,0,lower,0,integrity.,P
+12,0,0,95,0,0,sentence,0,Academic dishonesty is to knowingly act or fail to act in a way that results or could result in,P
+12,0,0,94,0,0,mixed,0,"unearned academic credit or advantage. This behaviour can result in serious consequences, e.g.",P
+12,0,0,94,0,0,lower,0,"the grade of zero on an assignment, loss of credit with a notation on the transcript (notation",P
+12,0,0,92,0,0,mixed,0,"reads: Grade of F assigned for academic dishonesty), and/or suspension or expulsion from the",P
+12,0,0,11,0,0,lower,0,university.,P
+12,0,0,96,0,0,mixed,0,It is your responsibility to understand what constitutes academic dishonesty. For information on,P
+12,0,0,98,0,0,mixed,0,"the various types of academic dishonesty please refer to the Academic Integrity Policy, located at",P
+12,0,0,34,0,0,lower,0,www.mcmaster.ca/academicintegrity.,P
+12,0,0,66,0,0,sentence,0,The following illustrates only three forms of academic dishonesty:,P
+12,0,0,89,1,0,mixed,0,"1. Plagiarism, e.g. the submission of work that is not ones own or for which other credit",P
+12,0,0,18,0,0,lower,0,has been obtained.,P
+12,0,0,40,1,0,mixed,0,2. Improper collaboration in group work.,P
+12,0,0,64,1,0,mixed,0,3. Copying or using unauthorized aids in tests and examinations.,P
+14,1,0,42,0,1,upper,0,REQUESTING RELIEF FOR MISSED ACADEMIC WORK,H2
+12,0,0,96,0,0,sentence,0,"Students may request relief from a regularly scheduled midterm, test, assignment or other course",P
+12,0,0,36,0,0,lower,0,component in the following two ways:,P
+12,1,0,80,1,0,lower,0,a) for missed coursework worth less than 30% of the final grade (and/or absences,H3
+12,1,0,29,0,0,lower,0,lasting less than 5 days); or,H3
+12,1,0,78,1,0,lower,0,b) for missed coursework worth 30% or more of the final grade (and/or absences,H3
+12,1,0,31,0,0,lower,0,lasting more than five (5) days,H3
+12,1,0,80,1,0,mixed,0,a) For missed coursework worth less than 30% of the final grade (and/or absences,H3
+12,1,0,25,0,0,lower,0,lasting less than 5 days),H3
+12,0,0,87,0,0,mixed,0,Students must use the MSAF (McMaster Student Absence Form) for their first incidence of,P
+12,0,0,97,0,0,mixed,0,"missed coursework worth less than 30% for each term. This is an on-line, self-reporting tool, for",P
+12,0,0,86,0,0,lower,0,which submission of medical or other types of supporting documentation is normally not,P
+12,0,0,96,0,0,mixed,0,required. Students may use this tool to submit a maximum of one (1) request for relief of missed,P
+12,0,0,90,0,0,lower,0,academic work per term as long as the weighting of the component is worth 29% of the final,P
+12,0,0,96,0,0,mixed,0,grade or less. Students must follow up with their course instructors regarding the nature of the,P
+12,0,0,94,0,0,mixed,0,relief within two days of submitting the form. Failure to do so may negate the opportunity for,P
+12,0,0,101,0,0,mixed,0,relief. It is the prerogative of the instructor of the course to determine the appropriate relief for,P
+12,0,0,35,0,0,lower,0,missed term work in his/her course.,P
+12,0,0,94,0,0,mixed,0,"If the value of the component is worth 30% or more, students must report to the APO to discuss",P
+12,0,0,85,0,0,lower,0,their situation and will be required to provide appropriate supporting documentation.,P
+12,1,0,78,1,0,mixed,0,b) For missed coursework worth 30% or more of the final grade (and/or absences,H3
+10,0,0,24,0,0,lower,0,www.degroote.mcmaster.ca,P
+10,0,0,34,0,0,mixed,0,Commerce 1AA3 - Fall 2014 - 7 of 9,P
+12,1,0,31,0,0,lower,0,lasting more than five (5) days,H3
+12,0,0,90,0,0,mixed,0,Students MUST report to the APO to discuss their situation and will be required to provide,P
+12,0,0,92,0,0,mixed,0,"appropriate supporting documentation. If approved, students will be given access to the MSAF",P
+12,0,0,95,0,0,lower,0,system where they will be required to enter the details of the missed coursework for which they,P
+12,0,0,96,0,0,mixed,0,were approved. Students must follow up with their course instructors regarding the nature of the,P
+12,0,0,94,0,0,mixed,0,relief within two days of submitting the form. Failure to do so may negate the opportunity for,P
+12,0,0,101,0,0,mixed,0,relief. It is the prerogative of the instructor of the course to determine the appropriate relief for,P
+12,0,0,35,0,0,lower,0,missed term work in his/her course.,P
+12,0,0,93,0,0,sentence,0,Students who wish to submit more than one request for relief of missed academic work per term,P
+12,0,0,91,0,0,mixed,0,cannot use the online MSAF tool without permission. They must report to the APO and discuss,P
+12,0,0,85,0,0,mixed,0,their situation with an academic advisor. They will be required to provide supporting,P
+12,0,0,49,0,0,mixed,0,documentation and possibly meet with the Manager.,P
+12,0,0,60,0,0,mixed,0,The MSAF cannot be used during any final examination period.,P
+12,1,0,27,0,0,mixed,0,Regarding Midterm Conflicts,H3
+12,0,0,89,0,0,sentence,0,Students unable to write a mid-term at the posted exam time due to the following reasons:,P
+12,0,0,96,0,0,lower,0,religious; work-related (for part-time students only); representing university at an academic or,P
+12,0,0,92,0,0,lower,0,varsity athletic event; conflicts between two overlapping scheduled mid-term exams; or other,P
+12,0,0,92,0,0,mixed,0,"extenuating circumstances, have the option of applying for special exam arrangements. Please",P
+12,0,0,92,0,0,mixed,0,see the DeGroote Missed Course Work Policy for a list of conflicts that qualify for academic,P
+12,0,0,13,0,0,lower,0,accommodation,P
+12,0,0,77,0,0,lower,0,http://ug.degroote.mcmaster.ca/forms-and-resources/missed-course-work-policy/,P
+12,0,0,89,0,0,mixed,0,Such requests must be made to the Academic Programs Office at least ten (10) working days,P
+12,0,0,85,0,0,mixed,0,before the scheduled mid-term along with acceptable documentation. Instructors cannot,P
+12,0,0,96,0,0,mixed,0,themselves allow students to unofficially write make-up exams/tests. Adjudication of the request,P
+12,0,0,48,0,0,mixed,0,must be handled by the Academic Programs Office.,P
+12,0,0,98,0,0,sentence,0,"If a mid-term exam is missed without a valid reason, students will receive a grade of zero (0) for",P
+12,0,0,15,0,0,lower,0,that component.,P
+14,1,0,30,0,1,upper,0,STUDENT ACCESSIBILITY SERVICES,H2
+12,0,0,87,0,0,mixed,0,Students who require academic accommodation must contact Student Accessibility Services,P
+12,0,0,86,0,0,mixed,0,(SAS) to make arrangements with a Program Coordinator. Academic accommodations must be,P
+12,0,0,94,0,0,mixed,0,arranged for each term of study. Student Accessibility Services can be contacted by phone 905-,P
+12,0,0,88,0,0,mixed,0,"525-9140 ext. 28652 or e-mail sas@mcmaster.ca. For further information, consult McMaster",P
+12,0,0,76,0,0,mixed,0,Universitys Policy for Academic Accommodation of Students with Disabilities.,P
+10,0,0,24,0,0,lower,0,www.degroote.mcmaster.ca,P
+10,0,0,34,0,0,mixed,0,Commerce 1AA3 - Fall 2014 - 8 of 9,P
+14,1,0,37,0,1,upper,0,POTENTIAL MODIFICATIONS TO THE COURSE,H2
+12,0,0,97,0,0,sentence,0,The instructor and university reserve the right to modify elements of the course during the term.,P
+12,0,0,83,0,0,sentence,0,The university may change the dates and deadlines for any or all courses in extreme,P
+12,0,0,86,0,0,mixed,0,"circumstances. If either type of modification becomes necessary, reasonable notice and",P
+12,0,0,93,0,0,lower,0,communication with the students will be given with explanation and the opportunity to comment,P
+12,0,0,92,0,0,mixed,0,on changes. It is the responsibility of the student to check their McMaster email and course,P
+12,0,0,56,0,0,lower,0,websites weekly during the term and to note any changes.,P
+14,1,0,28,0,1,upper,0,DETAILS FOR ONLINE COMPONENT,H2
+12,0,0,94,0,0,mixed,0,In this course we will be using Pearsons online portal and Avenue to Learn. Students should be,P
+12,0,0,95,0,0,lower,0,"aware that, when they access the electronic components of this course, private information such",P
+12,0,0,93,0,0,mixed,0,"as first and last names, user names for the McMaster e-mail accounts, and program affiliation",P
+12,0,0,90,0,0,mixed,0,may become apparent to all other students in the same course. The available information is,P
+12,0,0,92,0,0,mixed,0,dependent on the technology used. Continuation in this course will be deemed consent to this,P
+12,0,0,96,0,0,mixed,0,disclosure. If you have any questions or concerns about such disclosure please discuss this with,P
+12,0,0,22,0,0,lower,0,the course instructor.,P
+10,0,0,24,0,0,lower,0,www.degroote.mcmaster.ca,P
+10,0,0,34,0,0,mixed,0,Commerce 1AA3 - Fall 2014 - 9 of 9,P
+14,1,0,15,0,1,upper,0,COURSE SCHEDULE,H2
+16,1,0,13,0,1,mixed,0,Commerce 1AA3,H2
+16,1,0,36,0,1,mixed,0,Introduction to Financial Accounting,H2
+16,1,0,25,0,1,mixed,0,Fall 2014 Course Schedule,H2
+12,1,0,4,0,0,sentence,0,Date,P
+12,0,0,12,0,0,sentence,0,Week 1 and 2,P
+12,0,0,9,0,0,sentence,0,Sept 4 12,P
+12,1,0,5,0,0,upper,0,TOPIC,P
+12,0,0,43,0,0,mixed,0,Financial Statements and Business Decisions,P
+12,1,0,44,0,0,mixed,0,"(Note: First class is on Thursday, Sept 4th)",P
+12,1,0,7,0,0,sentence,0,Details,P
+12,0,0,9,0,0,sentence,0,Chapter 1,P
+12,0,0,33,0,0,mixed,0,Investing and Financing Decisions,P
+12,0,0,9,0,0,sentence,0,Chapter 2,P
+12,0,0,40,0,0,mixed,0,Operating Decisions and Income Statement,P
+12,0,0,9,0,0,sentence,0,Chapter 3,P
+12,0,0,23,0,0,mixed,0,Statement of Cash Flows,P
+12,0,0,10,0,0,sentence,0,Chapter 12,P
+12,0,0,20,0,0,mixed,0,Receivables and Cash,P
+12,0,0,23,0,0,mixed,0,Chapter 4 and Chapter 5,P
+12,0,0,42,0,0,mixed,0,"Revenues, Cost of Goods Sold and Inventory",P
+12,1,0,36,0,0,mixed,0,(No classes on Monday October 13 and,P
+12,1,0,39,0,0,mixed,0,Midterm Exam is on Saturday October 18),P
+12,0,0,42,0,0,mixed,0,"Revenues, Cost of Goods Sold and Inventory",P
+12,0,0,17,0,0,mixed,0,Long Lived Assets,P
+12,1,0,38,0,0,mixed,0,(No classes on Thursday October 30 and,P
+12,1,0,20,0,0,mixed,0,Friday October 31st),P
+12,0,0,37,0,0,mixed,0,Current Liabilities and Notes Payable,P
+12,0,0,21,0,0,mixed,0,Long-Term Liabilities,P
+12,0,0,9,0,0,sentence,0,Chapter 6,P
+12,0,0,9,0,0,sentence,0,Chapter 6,P
+12,0,0,9,0,0,sentence,0,Chapter 7,P
+12,0,0,9,0,0,sentence,0,Chapter 9,P
+12,0,0,9,0,0,sentence,0,Chapter 9,P
+12,0,0,10,0,0,sentence,0,Chapter 10,P
+12,0,0,10,0,0,sentence,0,Cumulative,P
+12,0,0,7,0,0,sentence,0,Week 13,P
+12,0,0,13,0,0,mixed,0,Nov 24 Nov 28,P
+12,0,0,13,0,0,mixed,0,Owners Equity,P
+12,0,0,7,0,0,sentence,0,Week 14,P
+12,0,0,11,0,0,mixed,0,Dec 1 Dec 3,P
+12,0,0,17,0,0,mixed,0,Final Exam Review,P
+12,0,0,6,0,0,sentence,0,Week 3,P
+12,0,0,10,0,0,sentence,0,Sept 15 19,P
+12,0,0,6,0,0,sentence,0,Week 4,P
+12,0,0,10,0,0,sentence,0,Sept 22 26,P
+12,0,0,6,0,0,sentence,0,Week 5,P
+12,0,0,13,0,0,mixed,0,Sept 29 Oct 3,P
+12,0,0,6,0,0,sentence,0,Week 6,P
+12,0,0,8,0,0,sentence,0,Oct 6 10,P
+12,0,0,6,0,0,sentence,0,Week 7,P
+12,0,0,9,0,0,sentence,0,Oct 13 17,P
+12,0,0,6,0,0,sentence,0,Week 8,P
+12,0,0,9,0,0,sentence,0,Oct 20 24,P
+12,0,0,13,0,0,sentence,0,Week 9 and 10,P
+12,0,0,12,0,0,mixed,0,Oct 27 Nov 7,P
+12,0,0,7,0,0,sentence,0,Week 11,P
+12,0,0,9,0,0,sentence,0,Nov 10 14,P
+12,0,0,7,0,0,sentence,0,Week 12,P
+12,0,0,9,0,0,sentence,0,Nov 17 21,P
+10,0,0,24,0,0,lower,0,www.degroote.mcmaster.ca,P
+10,0,0,35,0,0,mixed,0,Commerce 1AA3 - Fall 2014 - 10 of 9,P
+12,1,0,7,0,0,sentence,0,Remarks,H3
+12,0,0,69,0,0,mixed,0,i. Please see the Course Website for any updates and course material.,P
+12,0,0,91,0,0,mixed,0,ii. MSAF is not permissible for weights on evaluation that are greater than or equal to 30%,P
+12,0,0,91,0,0,mixed,0,"(Midterms, Final exam). Any attempt to submit a falsified MSAF for this course for a missed",P
+12,0,0,93,0,0,mixed,0,test or midterm exam constitutes academic dishonesty and charges may be filed with the Office,P
+12,0,0,22,0,0,mixed,0,of Academic Integrity.,P
+12,0,0,95,0,0,mixed,0,iii. Please check with the Academics Program Office on the main floor of DeGroote on conditions,P
+12,0,0,64,0,0,mixed,0,attached to using the MSAF for the online evaluation components.,P
+12,0,0,93,0,0,mixed,0,iv. It is your responsibility to check Avenue daily everything you will need is there and any,P
+12,0,0,89,0,0,mixed,0,important announcements will be posted there. Set your home page to the news feed for the,P
+12,0,0,7,0,0,lower,0,course.,P
+12,0,0,80,0,0,mixed,0,v. It is your responsibility to understand what constitutes academic dishonesty.,P
+12,0,0,89,0,0,mixed,0,vi. We only respond to emails from students McMaster email accounts. Ensure that your Mac,P
+12,0,0,93,0,0,mixed,0,"account is activated and has space to receive emails. We reply to emails only once, and if it",P
+12,0,0,89,0,0,mixed,0,returns to us as undeliverable mail we do not attempt any further replies. Do not use the,P
+12,0,0,88,0,0,mixed,0,email provided by Avenue. We do not check Avenue for emails. We do not respond to emails,P
+12,0,0,90,0,0,mixed,0,asking questions to which the answer is readily available in the course outline or Avenue.,P
+10,0,0,24,0,0,lower,0,www.degroote.mcmaster.ca,P
