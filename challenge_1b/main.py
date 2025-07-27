@@ -2,7 +2,7 @@ import json
 from datetime import datetime
 from pathlib import Path
 import sys
-
+import argparse
 import numpy as np
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
@@ -14,7 +14,7 @@ from challenge_1a.main import process_pdf2
 BASE_DIR = Path(__file__).resolve().parent.parent
 INPUT_DIR = BASE_DIR / "challenge_1a" / "input"
 OUTPUT_DIR = BASE_DIR / "challenge_1b" / "output"
-MODEL_PATH = "./minilm"
+MODEL_PATH = str((BASE_DIR / "challenge_1b" / "minilm").resolve())
 
 
 def flatten_outline(sections, doc_title):
@@ -118,16 +118,46 @@ def save_output(output_data, output_dir, filename="challenge1b_output.json"):
     )
 
 
+# def main():
+#     persona = "A software engineer with expertise in agile methodologies"
+#     job = "Prepare a comprehensive analysis on agile testing methodologies, focusing on their evolution, current practices, and future trends"
+#     query = f"{persona}. Task: {job}"
+
+#     input_pdfs = load_pdfs(INPUT_DIR)
+#     all_sections = extract_sections(input_pdfs)
+#     ranked_sections = rank_sections(all_sections, query, MODEL_PATH)
+#     output = generate_output(ranked_sections, persona, job)
+#     save_output(output, OUTPUT_DIR)
+
+
 def main():
-    persona = "A software engineer with expertise in agile methodologies"
-    job = "Prepare a comprehensive analysis on agile testing methodologies, focusing on their evolution, current practices, and future trends"
+    parser = argparse.ArgumentParser(description="Rank PDF sections based on query")
+    parser.add_argument("--persona", required=True, help="Persona description")
+    parser.add_argument("--job", required=True, help="Job to be done description")
+    parser.add_argument(
+        "--input-dir", type=Path, default=INPUT_DIR, help="Directory of input PDFs"
+    )
+    parser.add_argument(
+        "--output-dir", type=Path, default=OUTPUT_DIR, help="Directory for output JSON"
+    )
+    parser.add_argument(
+        "--model-path", default=MODEL_PATH, help="SentenceTransformer model path"
+    )
+    args = parser.parse_args()
+
+    persona = args.persona
+    job = args.job
+    input_dir = args.input_dir
+    output_dir = args.output_dir
+    model_path = args.model_path
+
     query = f"{persona}. Task: {job}"
 
-    input_pdfs = load_pdfs(INPUT_DIR)
-    all_sections = extract_sections(input_pdfs)
-    ranked_sections = rank_sections(all_sections, query, MODEL_PATH)
-    output = generate_output(ranked_sections, persona, job)
-    save_output(output, OUTPUT_DIR)
+    pdfs = load_pdfs(input_dir)
+    sections = extract_sections(pdfs)
+    ranked = rank_sections(sections, query, model_path)
+    result = generate_output(ranked, persona, job)
+    save_output(result, output_dir)
 
 
 if __name__ == "__main__":
