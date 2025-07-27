@@ -4,6 +4,71 @@ A semantic PDF section analysis tool that processes multiple PDF documents, extr
 
 ---
 
+## Approach
+
+This project addresses the challenge of intelligently analyzing and ranking PDF content based on semantic relevance to specific user requirements. The solution employs a multi-stage approach that combines structural analysis with advanced natural language processing:
+
+### 1. Structured Section Extraction
+
+The system leverages the **Challenge 1A module** to extract hierarchical document structures from PDF files, including:
+
+- **Heading Detection**: Uses the trained ML model (97.3% accuracy) to identify document headings at various levels (H1, H2, H3, etc.)
+- **Content Extraction**: Captures paragraph content associated with each section and subsection
+- **Metadata Preservation**: Maintains page numbers, document sources, and hierarchical relationships
+
+### 2. Content Flattening and Preprocessing
+
+Extracted hierarchical structures are flattened into a searchable format:
+
+- **Section Consolidation**: Combines section headings with their associated paragraph content
+- **Text Refinement**: Aggregates subsection paragraphs to create comprehensive section descriptions
+- **Document Attribution**: Maintains traceability to source documents and page locations
+
+### 3. Semantic Embedding Generation
+
+The system uses **SentenceTransformer all-MiniLM-L6-v2** model for semantic understanding:
+
+- **Model Performance**:
+  - Sentence Embeddings: 68.06/100 (14 datasets)
+  - Semantic Search: 49.54/100 (6 datasets)
+  - Average Performance: 58.80/100
+- **Model Specifications**:
+  - Speed: 14,200 sentences/second
+  - Model Size: 80 MB
+  - 384-dimensional dense vector embeddings
+- **Dense Vector Representation**: Converts both section content and user queries into high-dimensional embeddings
+- **Contextual Understanding**: Captures semantic meaning beyond simple keyword matching
+- **Efficient Processing**: Lightweight model optimized for production deployment with excellent balance of performance, speed, and resource efficiency
+
+### 4. Query Construction and Matching
+
+User requirements are transformed into effective search queries:
+
+- **Persona Integration**: Combines user persona with specific job requirements
+- **Query Embedding**: Generates semantic embeddings for the combined persona-job query
+- **Similarity Computation**: Uses cosine similarity to measure semantic relatedness between sections and queries
+
+### 5. Relevance Ranking and Selection
+
+Sections are ranked based on semantic similarity scores:
+
+- **Scoring Algorithm**: Computes cosine similarity between section embeddings and query embedding
+- **Relevance Ranking**: Sorts sections by decreasing similarity scores
+- **Top-K Selection**: Returns the 10 most relevant sections with importance rankings
+- **Content Enrichment**: Includes both section titles and detailed paragraph content
+
+### 6. Structured Output Generation
+
+Results are formatted into comprehensive JSON output containing:
+
+- **Metadata Tracking**: Documents processed, query parameters, processing timestamps
+- **Ranked Sections**: Top sections with importance rankings and source attribution
+- **Detailed Analysis**: Full paragraph content for in-depth understanding
+
+This approach enables users to quickly identify the most relevant sections across multiple PDF documents based on their specific role and objectives, significantly reducing manual document review time while ensuring comprehensive coverage of relevant content.
+
+---
+
 ## Features
 
 - **PDF Processing**: Extracts structured sections and subsections from PDF documents using Challenge 1A module
@@ -43,12 +108,21 @@ challenge_1b/
 
 ## Model Info
 
-Uses **SentenceTransformer MiniLM** model for semantic similarity computation:
+Uses **SentenceTransformer all-MiniLM-L6-v2** model for semantic similarity computation:
 
-- Converts text sections and queries into dense vector embeddings
-- Computes cosine similarity between section embeddings and query embedding
-- Ranks sections by semantic relevance score
-- Lightweight and efficient for production use
+- **Performance Metrics**:
+  - Sentence Embeddings: 68.06/100 (14 datasets)
+  - Semantic Search: 49.54/100 (6 datasets)
+  - Average Performance: 58.80/100
+- **Model Specifications**:
+  - Speed: 14,200 sentences/second
+  - Model Size: 80 MB
+  - Lightweight and optimized for production deployment
+- **Functionality**:
+  - Converts text sections and queries into 384-dimensional dense vector embeddings
+  - Computes cosine similarity between section embeddings and query embedding
+  - Ranks sections by semantic relevance score
+  - Excellent balance of performance, speed, and resource efficiency
 
 ---
 

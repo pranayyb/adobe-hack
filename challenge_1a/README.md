@@ -4,6 +4,66 @@ A smart PDF heading extraction tool using machine learning, powered by pdfminer.
 
 ---
 
+## Approach
+
+This project tackles the challenge of automatically identifying and classifying headings in PDF documents using a machine learning approach. The solution is built around the following methodology:
+
+### 1. Text Span Extraction
+
+The system uses **pdfminer.six** to extract individual text spans from PDF pages, capturing not just the text content but also crucial formatting metadata including:
+
+- Font name and size
+- Character positioning
+- Text styling attributes
+
+### 2. Feature Engineering
+
+Each extracted text span is analyzed and converted into a feature vector containing:
+
+- **Font Properties**: Size, bold/italic styling, font family
+- **Text Characteristics**: Length, case pattern (uppercase, lowercase, sentence case, mixed)
+- **Structural Indicators**: Numeric prefixes (1., A., i.), bullet points, indentation
+- **Relative Sizing**: Comparison with the most common font size in the document
+
+### 3. Machine Learning Classification
+
+A **DecisionTreeClassifier** is trained on labeled data to classify text spans into categories:
+
+- **H1, H2, H3, etc.**: Different heading levels
+- **P**: Paragraph/body text
+- **Other**: Non-heading, non-paragraph content
+
+The model uses preprocessing steps including:
+
+- Label encoding for categorical features (text case)
+- Feature scaling for numerical attributes (font size, text length)
+- Balanced training on diverse document types
+
+### 4. Hierarchical Structure Building
+
+The classified spans are processed to build a structured document outline:
+
+- Headings are organized by their hierarchical levels
+- Page numbers are tracked for each heading
+- Document title is extracted (typically the first bold H1 or the first heading found)
+
+### 5. Output Generation
+
+Results are serialized into clean JSON format containing:
+
+- Document title
+- Hierarchical outline with heading levels, text content, and page references
+
+This approach leverages the fact that headings in professional documents typically follow consistent visual patterns (larger fonts, bold styling, specific positioning) that can be learned and generalized across different document types.
+
+### Research Foundation
+
+This implementation draws heavily from the research paper ["A Supervised Learning Approach For Heading Detection"](https://arxiv.org/pdf/1809.01477) by Budhiraja & Mago (2018), which demonstrated that machine learning classifiers can achieve high accuracy (96.95%) in heading detection tasks. Their work showed that features like font properties, text characteristics, and structural indicators are highly predictive for heading classification.
+
+To achieve comparable accuracy, this project involved **manual labelling of over 1,500 data points** extracted from diverse PDF documents, ensuring robust training data across different document types and formatting styles. By adapting their methodology and feature engineering techniques combined with our comprehensive labeled dataset, we were able to achieve an impressive **accuracy of 97.3%** - surpassing the original research results.
+
+---
+
 ## Features
 
 - Extracts text spans from PDFs
