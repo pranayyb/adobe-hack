@@ -5,6 +5,7 @@ import pickle
 import warnings
 from collections import Counter
 from pdfminer.high_level import extract_pages
+from pathlib import Path
 from pdfminer.layout import LTTextContainer, LTTextLineHorizontal, LTChar
 import pandas as pd
 
@@ -154,17 +155,92 @@ def process_pdf(pdf_path):
     return {"title": title, "outline": outline}
 
 
+def process_pdf2(pdf_path):
+    base_dir = Path(__file__).resolve().parent
+    model_dir = base_dir / "models"
+
+    with open(model_dir / "model.pkl", "rb") as f:
+        clf = pickle.load(f)
+    with open(model_dir / "le_case.pkl", "rb") as f:
+        case_encoder = pickle.load(f)
+    with open(model_dir / "le_label.pkl", "rb") as f:
+        label_encoder = pickle.load(f)
+    with open(model_dir / "scaler.pkl", "rb") as f:
+        scaler = pickle.load(f)
+
+    spans = extract_spans(pdf_path)
+    classified = classify_spans_with_model(
+        spans, clf, case_encoder, label_encoder, scaler
+    )
+
+    outline = []
+    stack = []
+    paragraph_buffer = []
+    current_page = None
+
+    def flush_paragraph():
+        nonlocal paragraph_buffer, current_page
+        if paragraph_buffer and stack:
+            paragraph_text = " ".join(paragraph_buffer).strip()
+            stack[-1]["subsections"].append(
+                {"text": paragraph_text, "page": current_page}
+            )
+            paragraph_buffer.clear()
+
+    for span, label in classified:
+        if label.startswith("H"):
+            flush_paragraph()
+            level = int(label[1])
+            heading = {
+                "level": label,
+                "text": span["text"],
+                "page": span["page"],
+                "subsections": [],
+            }
+
+            while stack and int(stack[-1]["level"][1]) >= level:
+                stack.pop()
+
+            if stack:
+                stack[-1]["subsections"].append(heading)
+            else:
+                outline.append(heading)
+
+            stack.append(heading)
+
+        elif label == "P":
+            paragraph_buffer.append(span["text"])
+            current_page = span["page"]
+        else:
+            flush_paragraph()
+
+    flush_paragraph()
+
+    title = next(
+        (span["text"] for span, level in classified if span["bold"] and level == "H1"),
+        "",
+    )
+    if not title and outline:
+        title = outline[0]["text"]
+    if not title:
+        title = "Untitled Document"
+
+    return {"title": title, "outline": outline}
+
+
 def main():
-    input_dir = "input"
-    output_dir = "output"
+    base_dir = Path(__file__).resolve().parent
+    input_dir = base_dir / "input"
+    output_dir = base_dir / "output"
+
+    input_dir.mkdir(parents=True, exist_ok=True)
+    output_dir.mkdir(parents=True, exist_ok=True)
 
     for filename in os.listdir(input_dir):
         if filename.endswith(".pdf"):
-            input_pdf = os.path.join(input_dir, filename)
-            output_json = os.path.join(
-                output_dir, os.path.splitext(filename)[0] + ".json"
-            )
-            result = process_pdf(input_pdf)
+            input_pdf = input_dir / filename
+            output_json = output_dir / f"{Path(filename).stem}.json"
+            result = process_pdf(str(input_pdf))
             with open(output_json, "w") as f:
                 json.dump(result, f, indent=2)
             print(f"Processed {filename} → {output_json}")
