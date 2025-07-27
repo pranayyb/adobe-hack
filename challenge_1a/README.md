@@ -1,4 +1,4 @@
-# Adobe-Hack
+# Adobe-Hack - 1A - PDF Extraction of Headings
 
 A smart PDF heading extraction tool using machine learning, powered by pdfminer.six and scikit-learn. It processes PDFs and outputs structured outlines with heading levels (`H1`, `H2`, etc.) in JSON format.
 
