@@ -99,6 +99,8 @@ def spans_to_df(spans):
 
 def classify_spans_with_model(spans, clf, case_encoder, label_encoder, scaler):
     df = spans_to_df(spans)
+    if df.empty:
+        return []
     df["text_case"] = case_encoder.transform(df["text_case"])
     features = [
         "size",

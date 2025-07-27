@@ -1,0 +1,1715 @@
+{
+  "title": "Humor Detection: A Transformer Gets the Last Laugh",
+  "outline": [
+    {
+      "level": "H2",
+      "text": "Humor Detection: A Transformer Gets the Last Laugh",
+      "page": 1
+    },
+    {
+      "level": "H2",
+      "text": "A",
+      "page": 1
+    },
+    {
+      "level": "H2",
+      "text": "L",
+      "page": 1
+    },
+    {
+      "level": "H2",
+      "text": "C",
+      "page": 1
+    },
+    {
+      "level": "H2",
+      "text": "X",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Recent advances in natural language processing",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "and neural network architecture have allowed for",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "widespread application of these methods in Text",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Summarization (Liu et al., 2018), Natural Lan-",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "guage Generation (Bahuleyan, 2018), and Text",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Classication (Yang et al., 2016). Such advances",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "have enabled scientists to study common language",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "practices. One such area, humor, has garnered fo-",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "cus in classication (Zhang and Liu, 2014; Chen",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "and Soo, 2018), generation (He et al., 2019; Vali-",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "tutti et al., 2013), and in social media (Raz, 2012).",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "The next question then is, what makes a joke",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "humorous? Although humor is a universal con-",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "struct, there is a wide variety between what each",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "individual may nd humorous. We attempt to fo-",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "cus on a subset of the population where we can",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "quantitatively measure reactions: the popular Red-",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "dit r/Jokes thread. This forum is highly popu-",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "lar - with tens of thousands of jokes being posted",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "monthly and over 16 million members. Although",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "larger joke datasets exist, the r/Jokes thread is un-",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "paralleled in the amount of rated jokes it contains.",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "To the best of our knowledge there is no compa-",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "rable source of rated jokes in any other language.",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "These Reddit posts consist of the body of the joke,",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "the punchline, and the number of reactions or up-",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "votes. Although this type of humor may only be",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "most enjoyable to a subset of the population, it is",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "an effective way to measure responses to jokes in",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "a large group setting.1",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "What enables us to perform such an analysis",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "are the recent improvements in neural network ar-",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "chitecture for natural language processing. These",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "breakthroughs started with the Convolutional Neu-",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "ral Network (LeCun et al., 1998) and have recently",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "included the inception (Bahdanau et al., 2015) and",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "progress of the Attention mechanism (Luong et al.,",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "2015; Xu et al., 2015), and the Transformer archi-",
+      "page": 1
+    },
+    {
+      "level": "H1",
+      "text": "tecture (Vaswani et al., 2017).",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "In the related work of joke identication, we nd a",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "myriad of methods employed over the years: sta-",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "tistical and N-gram analysis (Taylor and Mazlack,",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "2004), Regression Trees (Purandare and Litman,",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "2006), Word2Vec combined with K-NN Human",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Centric Features (Yang et al., 2015), and Convo-",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "lutional Neural Networks (Chen and Soo, 2018).",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "This previous research has gone into many set-",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "tings where humor takes place. Chen and Soo",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "(2018) studied audience laughter compared to tex-",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "tual transcripts in order to identify jokes in con-",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "versation, while much work has also gone into us-",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "at this link. We do not endorse these jokes.",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Body",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "Man, I was so tired last night; I had a dream I was a",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "mufer...",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "I told my teenage niece to go get me a newspaper...",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "She laughed at me, and said, Oh uncle youre so",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "old. Just use my phone.",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "Punchline",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "and I woke up ex-",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "hausted",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "So I slammed her",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "the",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "phone against",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "wall to kill a spider.",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "Score",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "276",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "28315",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "ing and creating datasets like the Pun of the Day",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "(Yang et al., 2015), 16000 One-liners (Mihalcea",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "and Strapparava, 2005), and even Ted Talks (Chen",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "and Soo, 2018).",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "We gathered jokes from a variety of sources, each",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "covering a different type of humor. These datasets",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "include jokes of multiple sentences (the Short",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "Jokes dataset), jokes with only one sentence (the",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "Puns dataset), and more mixed jokes (the Reddit",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "dataset). We have made our code and datasets",
+      "page": 2
+    },
+    {
+      "level": "H1",
+      "text": "open source for others to use. 2",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "3.1 Reddit",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "Our Reddit data was gathered using Reddits pub-",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "lic API, collecting the most recent jokes. Every",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "time the scraper ran, it also updated the upvote",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "score of the previously gathered jokes. This data",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "collection occurred every hour through the months",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "of March and April 2019. Since the data was al-",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "ready split into body and punchline sections from",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "Reddit, we created separate datasets containing the",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "body of the joke exclusively and the punchline of",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "the joke exclusively. Additionally, we created a",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "dataset that combined the body and punchline to-",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "gether.",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "Some sample jokes are shown in Table 1, above.",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "The distribution of joke scores varies wildly, rang-",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "ing from 0 to 136,354 upvotes. We found that",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "there is a major jump between the 0-200 upvote",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "range and the 200 range and onwards, with only",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "6% of jokes scoring between 200-20,000. We used",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "this natural divide as the cutoff to decide what",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "qualied as a funny joke, giving us 13884 not-",
+      "page": 2
+    },
+    {
+      "level": "H1",
+      "text": "funny jokes and 2025 funny jokes.",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "3.2 Short Jokes",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "The Short Jokes dataset, found on Kaggle, con-",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "tains 231,657 short jokes scraped from various",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "joke websites with lengths ranging from 10 to 200",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "characters. The previous work by Chen and Soo",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "(2018) combined this dataset with the WMT162",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "English news crawl. Although their exact com-",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "bined dataset is not publicly available, we used",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "the same method and news crawl source to cre-",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "ate a similar dataset. We built this new Short Jokes",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "dataset by extracting sentences from the WMT162",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "news crawl that had the same distribution of words",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "and characters as the jokes in the Short Jokes",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "dataset on Kaggle3. This was in order to match",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "the two halves (jokes and non-jokes) as closely as",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "possible.",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "3.3 Pun of the Day",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "This dataset was scraped by Yang et al. (2015) and",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "contains 16001 puns and 16002 not-punny sen-",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "tences. We gratefully acknowledge their help in",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "putting together and giving us use of this dataset.",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "These puns were constructed from the Pun of",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "the Day website while the negative samples were",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "gathered from news websites.",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "In this section we will discuss the methods and",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "model used in our experiments.",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "4.1 Our Model",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "We have chosen to use the pre-trained BERT (De-",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "vlin et al., 2018) as the base of our model. BERT",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "is a multi-layer bidirectional Transformer encoder",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "and was initially trained on a 3.3 billion word cor-",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "pus. The model can be ned-tuned with another",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "additional output layer for a multitude of other",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "tasks. We chose to use this Transformer based",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "model as our initial platform because of its success",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "at recognizing and attending to the most important",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "words in both sentence and paragraph structures.",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "In Figure 1, originally designed by Vaswani",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "et al. (2017), we see the architecture of a Trans-",
+      "page": 2
+    },
+    {
+      "level": "H1",
+      "text": "the initial input goes up through",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "former model:",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "an encoder, which has two parts: a multi-headed",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "Method",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "Body",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "Punchline",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "Full",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "CNN",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "Transformer",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "Human (General)",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "0.651",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "0.661",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "0.493",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "0.684",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "0.692",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "0.592",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "0.688",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "0.724",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "0.663",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "the same model format as previously mentioned,",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "trained on the Reddit dataset. We then immedi-",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "ately apply the model to predict on the Short Joke",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "and Puns dataset, without further ne-tuning, in",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "order to compare the model. However, because",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "both the Puns and Short Joke datasets have large",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "and balanced labels, we do so without the upsam-",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "pling and downsampling steps used for the Reddit",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "dataset.",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "self attention layer, followed by a feed-forward",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "network. It then outputs the information into the",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "decoder, which includes the previously mentioned",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "layers, plus an additional masked attention step.",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "Afterwords, it is transformed through a softmax",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "into the output. This models success is in large",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "part due to the Transformers self-attention layers.",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "We chose a learning rate of 2e-05 and a max",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "sequence length of 128. We trained the model for a",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "maximum of 7 epochs, creating checkpoints along",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "the way.",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "4.2 Training",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "Since our data was unbalanced we decided to up-",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "sample the humorous jokes in training. We split",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "the dataset into a 75/25 percent split, stratifying",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "with the labels. We then upsampled the minority",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "class in the training set until it reached an even 50",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "percent. This helped our model learn in a more",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "balanced way despite the uneven amount of non-",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "humorous jokes. Our validation and test sets were",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "composed of the remaining 25%, downsampling",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "the data into a 50/50 class split so that the accuracy",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "metric could be balanced and easily understood.",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "To show how our model compares to the pre-",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "vious work done, we also test on the Short Joke",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "and Pun datasets mentioned in the Data section.",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "For these datasets we will use the metrics (Accu-",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "racy, Precision, Recall, and F1 Score) designated",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "in Chen and Soo (2018) as a comparison. We use",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "In this section we will introduce the baselines and",
+      "page": 3
+    },
+    {
+      "level": "H1",
+      "text": "models used in our experiments.",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "5.1 Baselines",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "In order to have fair baselines, we used the fol-",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "lowing two models: a CNN with Highway Lay-",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "ers as described by Chen and Soo (2018) and de-",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "veloped by Srivastava et al. (2015), and human",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "performance from a study on Amazons Mechan-",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "ical Turk. We wanted to have the general pop-",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "ulation rate these same jokes, thus showing the",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "difference between a general audience and a spe-",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "cic subset of the population, in particular, Red-",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "dit r/Jokes users. Since the Reddit users obvi-",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "ously found these jokes humorous, this experiment",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "would show whether or not a more general popu-",
+      "page": 3
+    },
+    {
+      "level": "H1",
+      "text": "lation agreed with those labels.",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "We had 199 unique participants rate an average",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "of 30 jokes each with the prompt do you nd this",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "joke humorous? If the participant was evaluating",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "a sample from a body or punchline only dataset we",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "prefaced our question with a sentence explaining",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "that context, for example: Below is the punch-",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "line of a joke. Based on this punchline, do you",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "think you would nd this joke humorous? Taking",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "these labels, we used the most frequently chosen",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "tag from a majority vote to calculate the percent-",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "ages found in the Human section of Table 2.",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "5.2 Results",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "In Table 2, we see the results of our experiment",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "with the Reddit dataset. We ran our models on",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "Previous Work:",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "Word2Vec+HCF",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "CNN",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "CNN+F",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "CNN+HN",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "CNN+F+HN",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "Our Methods:",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "Transformer",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "Accuracy Precision Recall",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "0.836",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "0.859",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "0.907",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "0.903",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "0.940",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "0.776",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "0.880",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "0.886",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "0.889",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "0.866",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "0.797",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "0.867",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "0.892",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "0.892",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "0.894",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "Accuracy Precision Recall",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "0.931",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "0.930",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "0.930",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "F1",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "0.705",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "0.869",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "0.896",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "0.896",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "0.901",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "F1",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "0.931",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "the body of the joke exclusively, the punchline ex-",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "clusively, and both parts together (labeled full in",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "our table). On the full dataset we found that the",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "Transformer achieved an accuracy of 72.4 percent",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "on the hold out test set, while the CNN was in the",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "high 60s. We also note that the general human",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "classication found 66.3% of the jokes to be hu-",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "morous.",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "In order to understand what may be happening",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "in the model, we used the body and punchline only",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "datasets to see what part of the joke was most im-",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "portant for humor. We found that all of the models,",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "including humans, relied more on the punchline",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "of the joke in their predictions (Table 2). Thus,",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "it seems that although both parts of the joke are",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "needed for it to be humorous, the punchline car-",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "ries higher weight than the body. We hypothesize",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "that this is due to the variations found in the dif-",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "ferent joke bodies: some take paragraphs to set up",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "the joke, while others are less than a sentence.",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "Our experiment with the Short Jokes dataset",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "found the Transformer models accuracy and F1",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "score to be 0.986. This was a jump of 8 percent",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "from the most recent work done with CNNs (Ta-",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "ble 4).",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "The results on the Pun of the Day dataset are",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "shown in Table 3 above.",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "It shows an accuracy",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "of 93 percent, close to 4 percent greater accuracy",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "than the best CNN model proposed. Although the",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "CNN model used a variety of techniques to extract",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "the best features from the dataset, we see that the",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "self-attention layers found even greater success in",
+      "page": 4
+    },
+    {
+      "level": "H1",
+      "text": "pulling out the crucial features.",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "Considering that a jokes humor value is subjec-",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "tive, the results on the Reddit dataset are surpris-",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "ing. The model has used the context of the words",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "to determine, with high probability, what an av-",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "erage Reddit r/Jokes viewer will nd humorous.",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "When we look at the general populations opinion",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "as well, we nd a stark difference between their",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "preferences and those of the Reddit users (Table",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "2). We would hypothesize that our model is learn-",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "ing the specic type of humor enjoyed by those",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "who use the Reddit r/Jokes forum. This would",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "suggest that humor can be learned for a specic",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "subset of the population.",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "The models high accuracy and F1 scores on the",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "Short Jokes and Pun of the Day dataset show the",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "effectiveness of the model for transfer learning.",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "This result is not terribly surprising. If the model",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "can gure out which jokes are funny, it seems to be",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "an easier task to tell when something isnt a joke",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "at all.",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "Although these results have high potential,",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "dening the absolute truth value for a jokes humor",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "is a challenging, if not impossible task. However,",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "these results indicate that, at least for a subset of",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "the population, we can nd and identify jokes that",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "will be most humorous to them.",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "In this paper, we showed a method to dene the",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "measure of a jokes humor. We explored the",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "idea of using machine learning tools, specically",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "a Transformer neural network architecture, to dis-",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "cern what jokes are funny and what jokes are not.",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "This proposed model does not require any human",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "interaction to determine, aside from the text of the",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "joke itself, which jokes are humorous. This archi-",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "tecture can predict the level of humor for a specic",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "audience to a higher degree than a general audi-",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "ence consensus. We also showed that this model",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "has increased capability in joke identication as",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "a result, with higher accuracy and F1 scores than",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "previous work on this topic.",
+      "page": 5
+    }
+  ]
+}
