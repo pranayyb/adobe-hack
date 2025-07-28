@@ -122,6 +122,7 @@ adobe-hack/
 │   └── requirements.txt               # Python dependencies
 │
 ├── README.md                          # Project overview and instructions
+├── .gitignore                         # gitignore file
 ├── Solution Brief.pdf                 # Problem statement / solution summary
 ```
 
