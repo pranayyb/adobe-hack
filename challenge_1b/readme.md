@@ -214,7 +214,7 @@ python main.py \
 ### 1. Build the Docker image
 
 ```bash
-docker build -t challenge1b .
+docker build -t challenge_1b -f challenge_1b/Dockerfile .
 ```
 
 ### 2. Run the container
