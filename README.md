@@ -102,18 +102,27 @@ graph LR
 
 ```
 adobe-hack/
-├── challenge_1a/          # PDF heading extraction
-│   ├── input/             # Input PDF files
-│   ├── output/            # Extracted outlines (JSON)
-│   ├── models/            # Pre-trained ML models
-│   └── main.py            # Heading extraction script
-├── challenge_1b/          # Semantic section ranking
-│   ├── pdfs/              # Input PDF files
-│   ├── output/            # Ranked analysis (JSON)
-│   ├── minilm/            # SentenceTransformer model
-│   └── main.py            # Section ranking script
-├── .gitignore             # gitignore file  
-└── README.md              # This file
+├── challenge_1a/                      # PDF heading extraction
+│   ├── input/                         # Input PDF files
+│   ├── output/                        # Extracted section outlines (JSON)
+│   ├── csvs/                          # Intermediate CSV data
+│   ├── models/                        # Trained ML models and encoders
+│   ├── main.py                        # Section extraction and classification pipeline
+│   ├── csv_generation.py              # CSV generation script
+│   ├── Dockerfile                     # Dockerfile for heading extraction
+│   └── requirements.txt               # Python dependencies
+│
+├── challenge_1b/                      # Semantic section ranking
+│   ├── pdfs/                          # Input PDFs for semantic ranking
+│   ├── output/                        # Ranked sections output (JSON)
+│   ├── minilm/                        # SentenceTransformer model (MiniLM)
+│   ├── main.py                        # Ranking and analysis script
+│   ├── download_model.py              # Model download utility
+│   ├── Dockerfile                     # Dockerfile for section ranking
+│   └── requirements.txt               # Python dependencies
+│
+├── README.md                          # Project overview and instructions
+├── Solution Brief.pdf                 # Problem statement / solution summary
 ```
 
 ---
