@@ -115,7 +115,7 @@ The model is a DecisionTreeClassifier trained on labeled PDF spans using:
 
 ```bash
 git clone https://github.com/pranayyb/adobe-hack.git
-cd adobe-hack
+cd adobe-hack/challenge_1a
 ```
 
 ### 2. Add PDFs to the `/input` directory

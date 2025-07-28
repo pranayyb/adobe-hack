@@ -138,7 +138,7 @@ Uses **SentenceTransformer all-MiniLM-L6-v2** model for semantic similarity comp
 
 ```bash
 git clone https://github.com/pranayyb/adobe-hack.git
-cd adobe-hack/challenge_1b
+cd adobe-hack
 ```
 
 ### 2. Environment Setup
@@ -219,11 +219,11 @@ docker build -t challenge1b .
 
 ```bash
 docker run --rm \
-  -v "$(pwd)/pdfs":/app/challenge_1b/pdfs \
-  -v "$(pwd)/output":/app/challenge_1b/output \
+  -v "$(pwd)/challenge_1a/pdfs":/app/challenge_1b/pdfs \
+  -v "$(pwd)/challenge_1b/output":/app/challenge_1b/output \
   challenge1b \
-  --persona "A data scientist specializing in machine learning" \
-  --job "Analyze current trends in deep learning architectures"
+  --persona "A software engineer with expertise in agile methodologies" \
+  --job "Prepare a comprehensive analysis on agile testing methodologies, focusing on their evolution, current practices, and future trends"
 ```
 
 The Docker container includes a default command with sample persona and job description for agile testing methodologies.

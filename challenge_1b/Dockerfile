@@ -6,11 +6,10 @@ RUN apt-get update && \
 
 WORKDIR /app
 
-COPY . /app/challenge_1b/
-
-COPY ../challenge_1a/ /app/challenge_1a/
-
-COPY ./requirements.txt /app/requirements.txt
+# COPY both folders relative to the build context (which is Adobe/)
+COPY challenge_1a/ /app/challenge_1a/
+COPY challenge_1b/ /app/challenge_1b/
+COPY challenge_1b/requirements.txt /app/requirements.txt
 
 RUN pip install --no-cache-dir -r /app/requirements.txt
 
