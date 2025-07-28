@@ -209,6 +209,8 @@ python main.py \
 
 ## Run with Docker
 
+### *Ensure you are in the project root directory, not inside the challenge_1b folder, before running the Dockerfile.*
+
 ### 1. Build the Docker image
 
 ```bash
